@@ -1,0 +1,2236 @@
+CREATE table Staff
+(
+	SID int primary key,
+	Bus_No varchar(30) references Bus(Bus_no)on delete cascade,
+	S_Name char(30),
+	Designation char(30),
+	Salary int,
+	Years_Exp int,
+	RID int references Route(RID)on delete cascade
+);
+
+CREATE table Depot
+(
+	Depot_Name char(30),
+	Depot_No int primary key,
+	Bus_No varchar(30) references Bus(Bus_No)on delete cascade
+);
+
+
+create table Depot
+(
+	Bus_no varchar(30) references Bus(Bus_no)on delete cascade,
+	Depot_no int,
+	Depot_name varchar(30),
+	SID int references Staff(SID)
+);
+
+insert into Depot values
+('1','8','Yeshwanthpur',500);
+
+insert into Depot values
+('1E','8','Yeshwanthpur',501);
+
+insert into Depot values     
+('2','4','Jayanagar',502);
+insert into Depot values     
+('2A','4','Jayanagar',503);
+
+
+
+insert into Depot values
+('3F',4,'Jayanagar',504);
+
+insert into Depot values
+('13',4,'Jayanagar',505);
+
+insert into Depot values
+('13F',4,'Jayanagar',506);
+
+insert into Depot values
+('15A',20,'Banashankari',507);
+
+insert into Depot values
+('15E',20,'Banashankari',508);
+
+insert into Depot values
+('25',4,'Jayanagar',509);
+
+insert into Depot values
+('60A',4,'Jayanagar',510);
+
+insert into Depot values
+('61',1,'Kempegowda Bus Station',511);
+
+insert into Depot values
+('75B','1','KBS',512);
+
+insert into Depot values
+('75D',8,'Yeshwanthpur',513);
+
+insert into Depot values
+('77',1,'KBs',514);
+
+insert into Depot values
+('80',1,'Kempegowda Bus Station',515);
+
+insert into Depot values
+('82',8,'Yeshwanthpur',516);
+
+insert into Depot values
+('87',1,'Kempegowda Bus Station',517);
+
+insert into Depot values
+('89',1,'Kempegowda Bus Station',518);
+
+insert into Depot values
+('96A',1,'Kempegowda Bus Station',519);
+
+insert into Depot values
+('96C',1,'Kempegowda Bus Station',520);
+
+insert into Depot values
+('99A',8,'Yeshwanthpur',521);
+
+insert into Depot values
+('100',8,'Yeshwanthpur',522);
+
+insert into Depot values
+('111',14,'R T Nagar',523);
+
+insert into Depot values
+('111C',14,'R T Nagar',524);
+
+insert into Depot values
+('112A',14,'R T Nagar',525);
+
+insert into Depot values
+('119',2,'Shivajinagar',526);
+
+insert into Depot values
+('125',2,'Shivajinagar',527);
+
+insert into Depot values
+('131',1,'Kempegowda Bus Station',528);
+
+insert into Depot values
+('140','1','KBS',529);
+
+insert into Depot values
+('140E','1','KBS',530);
+
+insert into Depot values
+('141',2,'Shivajinagar',531);
+
+insert into Depot values
+('141K',2,'Shivajinagar',532);
+
+insert into Depot values
+('144',2,'Shivajinagar',533);
+
+insert into Depot values
+('144A',2,'Shivajinagar',534);
+
+insert into Depot values
+('146',1,'Kempegowda Bus Station',535);
+
+insert into Depot values
+('146B',1,'Kempegowda Bus Station',536);
+
+insert into Depot values
+('161B',2,'Shivajinagar',537);
+
+insert into Depot values
+('161D',2,'Shivajinagar',538);
+
+insert into Depot values
+('163C','2','Shvajinagar',539);
+
+insert into Depot values
+('163F',1,'Kempegowda Bus Station',540);
+
+insert into Depot values
+('165E',3,'Shanti Nagar',541);
+
+insert into Depot values
+('168A','3','Shanti Nagar',542);
+
+insert into Depot values
+('171',1,'Kempegowda Bus Station',543);
+
+insert into Depot values
+('171F',2,'Shanti Nagar',544);
+
+insert into Depot values
+('176',14,'R T Nagar',545);
+
+insert into Depot values
+('176A',14,'R T Nagar',546);
+
+insert into Depot values
+('195',2,'Shivajinagar',547);
+
+insert into Depot values
+('201',13,'Katterguppe',548);
+
+insert into Depot values
+('201D',15,'Koramangala',549);
+
+insert into Depot values
+('201H',15,'Koramangala',550);
+
+insert into Depot values
+('210',33,'Poorna Pragna Layout',551);
+
+insert into Depot values
+('210D',20,'Banashankari',552);
+
+insert into Depot values
+('210FA',33,'Poorna Pragna Layout',553);
+
+insert into Depot values
+('210N',33,'Poorna Pragna Layout',554);
+
+insert into Depot values
+('210P',1,'Kempegowda Bus Station',555);
+
+insert into Depot values
+('211',20,'Banashankari',556);
+
+insert into Depot values
+('211D',20,'Banashankari',557);
+
+insert into Depot values
+('211E',20,'Banashankari',558);
+
+insert into Depot values
+('212',20,'Banashankari',559);
+
+insert into Depot values
+('213A',20,'Banashankari',560);
+
+insert into Depot values
+('214',20,'Banashankari',561);
+
+insert into Depot values
+('215',20,'Banashankari',562);
+
+insert into Depot values
+('215D',1,'Kempegowda Bus Station',563);
+
+insert into Depot values
+('216',20,'Banashankari',564);
+
+insert into Depot values
+('220B',1,'Kempegowda Bus Station',565);
+
+insert into Depot values
+('221',12,'Kengeri',566);
+
+insert into Depot values
+('221E',12,'Kengeri',567);
+
+insert into Depot values
+('222',12,'Kengeri',568);
+
+insert into Depot values
+('223A',2,'Shivajinagar',569);
+
+insert into Depot values
+('225',21,'Rajarajeshwarinagar',570);
+
+insert into Depot values
+('226A',1,'Kempegowda Bus Station',571);
+
+insert into Depot values
+('227',12,'Kengeri',572);
+
+insert into Depot values
+('227A',12,'Kengeri',573);
+
+insert into Depot values
+('228',12,'Kengeri',574);
+
+insert into Depot values
+('228A',12,'Kengeri',575);
+
+insert into Depot values
+('230',12,'Kengeri',576);
+
+insert into Depot values
+('231A',12,'Kengeri',577);
+
+insert into Depot values
+('235A',16,'Deepanjalinagar',578);
+
+insert into Depot values
+('235F',1,'Kempegowda Bus Station',579);
+
+insert into Depot values
+('238',1,'Kempegowda Bus Station',580);
+
+insert into Depot values
+('240','1','KBS',581);
+
+insert into Depot values
+('241','1','KBS',582);
+
+insert into Depot values
+('241A','1','KBS',583);
+
+insert into Depot values
+('242','1','KBS',584);
+
+insert into Depot values
+('243','1','KBS',585)
+
+insert into Depot values
+('248',16,'Deepanjalinagar',586);
+
+insert into Depot values
+('248B',9,'Peenya',587);
+
+insert into Depot values
+('250',1,'Kempegowda Bus Station',588);
+
+insert into Depot values
+('250AC',8,'Yeshwanthpur',589);
+
+insert into Depot values
+('251',1,'Kempegowda Bus Station',590);
+
+insert into Depot values
+('252',1,'Kempegowda Bus Station',591);
+
+insert into Depot values
+('252A',2,'Shivajinagar',592);
+
+insert into Depot values
+('252E',1,'Kempegowda Bus Station',593);
+
+insert into Depot values
+('253A',1,'Kempegowda Bus Station',594);
+
+insert into Depot values
+('255',8,'Yeshwanthpur',595);
+
+insert into Depot values
+('258',8,'Yeshwanthpur',596);
+
+insert into Depot values
+('263',8,'Yeshwanthpur',597);
+
+insert into Depot values
+('263A',1,'Kempegowda Bus Station',598);
+
+insert into Depot values
+('270',2,'Shivajinagar',599);
+
+insert into Depot values
+('270A',2,'Shivajinagar',600);
+
+insert into Depot values
+('271',1,'Kempegowda Bus Station',601);
+
+insert into Depot values
+('279A',1,'Kempegowda Bus Station',602);
+
+insert into Depot values
+('280A',1,'Kempegowda Bus Station',603);
+
+insert into Depot values
+('281A',1,'Kempegowda Bus Station',604);
+
+insert into Depot values
+('281C',1,'Kempegowda Bus Station',605);
+
+insert into Depot values
+('286',1,'Kempegowda Bus Station',606);
+
+insert into Depot values
+('290',2,'Shivajinagar',607);
+
+insert into Depot values
+('295',10,'Hennur',608);
+
+insert into Depot values
+('297A',1,'Kempegowda Bus Station',609);
+
+insert into Depot values
+('300',2,'Shivajinagar',610);
+
+insert into Depot values
+('300A','1','KBS',611);
+
+insert into Depot values
+('300B',1,'Kempegowda Bus Station',612);
+
+insert into Depot values
+('301','1','KBS',613);
+
+insert into Depot values
+('301A',2,'Shivajinagar',614);
+
+insert into Depot values
+('301D',2,'Shivajinagar',615);
+
+insert into Depot values
+('306',6,'Indiranagar',616);
+
+insert into Depot values
+('311',2,'Shivajinagar',617);
+
+insert into Depot values
+('311C',2,'Shivajinagar',618);
+
+insert into Depot values
+('313D',24,'K R Puram',619);
+
+insert into Depot values
+('314B',1,'Kempegowda Bus Station',620);
+
+insert into Depot values
+('315',24,'K R Puram',621);
+
+insert into Depot values
+('323',41,'Gunjur',622);
+
+insert into Depot values
+('327A',1,'Kempegowda Bus Station',623);
+
+insert into Depot values
+('327C',41',Gunjur',624);
+
+insert into Depot values
+('328H',39,'Hoskote',625);
+
+insert into Depot values
+('330',2,'Shivajinagar',626);
+
+insert into Depot values
+('335A',1,'Kempegowda Bus Station',627);
+
+insert into Depot values
+('340G',25,'H S R Layout',628);
+
+insert into Depot values
+('342',42,'Kodathi',629);
+
+insert into Depot values
+('342A',42,'Kodathi',630);
+
+insert into Depot values
+('342F',1,'Kempegowda Bus Station',631);
+
+insert into Depot values
+('350D',19,'Electronic City',632);
+
+insert into Depot values
+('350G',19,'Electronic City',633);
+
+insert into Depot values
+('360',19,'Electronic City',634);
+
+insert into Depot values
+('360K',1,'Kempegowda Bus Station',635);
+
+insert into Depot values
+('365',1,'Kempegowda Bus Station',636);
+
+insert into Depot values
+('365H',27,'Jigani',637);
+
+insert into Depot values
+('375',12,'Kengeri',638);
+
+insert into Depot values
+('375B',12,'Kengeri',639);
+
+insert into Depot values
+('375D',20,'Banashankari',640);
+
+insert into Depot values
+('375E',12,'Kengeri',641);
+
+insert into Depot values
+('375F',12,'Kengeri',642);
+
+insert into Depot values
+('375G',20,'Banashankari',643);
+
+insert into Depot values
+('378',12,'Kengeri',644);
+
+insert into Depot values
+('378A',12,'Kengeri',645);
+
+insert into Depot values
+('378D',12,'Kengeri',646);
+
+insert into Depot values
+('378F',20,'Banashankari',647);
+
+insert into Depot values
+('378H',19,'Electronic City',648);
+
+insert into Depot values
+('378M',19,'Electronic City',649);
+
+insert into Depot values
+('390',39,'Hoskote',650);
+
+insert into Depot values
+('400A',24,'K R Puram',651);
+
+insert into Depot values
+('401',8,'Yeshwanthpur',652);
+
+insert into Depot values
+('401A',30,'Yelahanka',653);
+
+insert into Depot values
+('401E',30,'Yelahanka',654);
+
+insert into Depot values
+('401AF',12,'Kengeri',655);
+
+insert into Depot values
+('402',1,'Kempegowda Bus Station',656);
+
+insert into Depot values
+('402M',21,'Rajarajeshwarinagar',657);
+
+insert into Depot values
+('410',22,'Peenya',658);
+
+insert into Depot values
+('410F',4,'Jayanagar',659);
+
+insert into Depot values
+('410M',20,'Banashankari',660);
+
+insert into Depot values
+('411',20,'Banashankari',661);
+
+insert into Depot values
+('411D',19,'Electronic City',662);
+
+insert into Depot values
+('500A',20,'Banashankari',663);
+
+insert into Depot values
+('500B',8,'Yeshwanthpur',664);
+
+insert into Depot values
+('500C',24,'K R Puram',665);
+
+
+insert into Depot values
+('500D',25,'H S R Layout',666);
+
+insert into Depot values
+('500F',25,'H S R Layout',667);
+
+insert into Depot values
+('501A',20,'Banashankari',668);
+
+insert into Depot values
+('501C',12,'Kengeri',669);
+
+insert into Depot values
+('502',12,'Kengeri',670);
+
+insert into Depot values
+('502D',12,'Kengeri',671);
+
+insert into Depot values
+('502F',12,'Kengeri',672);
+
+insert into Depot values
+('502H',12,'Kengeri',673);
+
+insert into Depot values
+('600C',20,'Banashankari',674);
+
+insert into Depot values
+('600F',20,'Banashankari',675);
+
+insert into Depot values
+('600G',20,'Banashankari',676);
+
+insert into Depot values
+('AS-1',20,'Banashankari',677);
+
+insert into Depot values
+('AS-7',22,'Peenya',678);
+
+insert into Depot values
+('AS-10',27,'Jigani',679);
+
+insert into Depot values
+('D-6',12,'Kengeri',680);
+
+insert into Depot values
+('FDR1',4,'Jayanagar',681);
+
+insert into Depot values
+('FDR2',4,'Jayanagar',682);
+
+insert into Depot values
+('FDR7',20,'Banashankari',683);
+
+insert into Depot values
+('K1',8,'Yeshwanthpur',684);
+
+insert into Depot values
+('K3',15,'Koramangala',685);
+
+CREATE table Bus
+(
+	Bus_No varchar(30) primary key,
+	Bus_Type char(30),
+	Company char(30)
+);
+
+INSERT into Bus values('1','Ordinary','Ashok leyland');
+INSERT into Bus values('1E','Ordinary','Ashok Leyland');
+INSERT into Bus values('2A','Ordinary','Ashok Leyland');
+INSERT into Bus values('3F','Ordinary','Ashok Leyland');
+INSERT into Bus values('13','Ordinary','Ashok Leyland');
+
+
+INSERT into Bus values('13F','Ordinary','Ashok Leyland');
+INSERT into Bus values('15A','Ordinary','Ashok Leyland');
+
+
+INSERT into Bus values('15E','Ordinary','Ashok Leyland');
+INSERT into Bus values('25','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('60A','Ordinary','Ashok Leyland');
+
+INSERT into Bus values('61','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('75B','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('75D','Ordinary','Ashok Leyland/TATA');
+
+INSERT into Bus values('77','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('80','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('82','Ordinary','Ashok Leyland/TATA');
+
+INSERT into Bus values('87','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('89','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('96A','Ordinary','Ashok Leyland');
+
+INSERT into Bus values('96C','Ordinary','Ashok Leyland');
+INSERT into Bus values('99A','Ordinary','Ashok Leyland');
+INSERT into Bus values('100','Ordinary','Ashok Leyland');
+
+INSERT into Bus values('111','Ordinary','Ashok Leyland');
+INSERT into Bus values('111C','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('112A','Ordinary','Ashok Leyland');
+INSERT into Bus values('119','Ordinary','Ashok Leyland');
+INSERT into Bus values('125','Ordinary','Ashok Leyland');
+
+INSERT into Bus values('131','Ordinary','Ashok Leyland');
+INSERT into Bus values('140','Ordinary','Ashok Leyland');
+INSERT into Bus values('140E','Ordinary','Ashok Leyland');
+INSERT into Bus values('141','Ordinary','Ashok Leyland');
+INSERT into Bus values('141K','Ordinary','Ashok Leyland');
+INSERT into Bus values('144','Ordinary','Ashok Leyland');
+
+INSERT into Bus values('144A','Ordinary','Ashok Leyland');
+INSERT into Bus values('146','Ordinary','Ashok Leyland');
+INSERT into Bus values('146B','Ordinary','Ashok Leyland');
+INSERT into Bus values('161B','Ordinary','Ashok Leyland');
+INSERT into Bus values('161D','Ordinary','Ashok Leyland');
+INSERT into Bus values('163C','Ordinary','Ashok Leyland');
+INSERT into Bus values('163F','Ordinary','Ashok Leyland');
+INSERT into Bus values('165E','Ordinary','Ashok Leyland');
+
+INSERT into Bus values('171','Ordinary','Ashok Leyland');
+INSERT into Bus values('171F','Ordinary','Ashok Leyland');
+INSERT into Bus values('176','Ordinary','Ashok Leyland');
+INSERT into Bus values('176A','Ordinary','Ashok Leyland');
+INSERT into Bus values('195','Ordinary','Ashok Leyland');
+INSERT into Bus values('201','Ordinary','Ashok Leyland');
+INSERT into Bus values('201D','Ordinary','Ashok Leyland');
+INSERT into Bus values('201H','Ordinary','Ashok Leyland');
+INSERT into Bus values('210','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('210D','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('210FA','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('210N','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('210P','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('211','Ordinary','Ashok Leyland/TATA');
+
+INSERT into Bus values('212','Ordinary','Ashok Leyland');
+INSERT into Bus values('213A','Ordinary','Ashok Leyland');
+INSERT into Bus values('214','Ordinary','Ashok Leyland');
+INSERT into Bus values('215','Ordinary','Ashok Leyland');
+INSERT into Bus values('215D','Ordinary','Ashok Leyland');
+INSERT into Bus values('216','Ordinary','Ashok Leyland');
+INSERT into Bus values('220B','Ordinary','Ashok Leyland');
+INSERT into Bus values('221','Ordinary','Ashok Leyland');
+INSERT into Bus values('221E','Ordinary','Ashok Leyland');
+INSERT into Bus values('222','Ordinary','Ashok Leyland');
+INSERT into Bus values('223A','Ordinary','Ashok Leyland');
+
+INSERT into Bus values('225','Ordinary','Ashok Leyland');
+INSERT into Bus values('226A','Ordinary','Ashok Leyland');
+INSERT into Bus values('227','Ordinary','Ashok Leyland');
+INSERT into Bus values('227A','Ordinary','Ashok Leyland');
+INSERT into Bus values('228','Ordinary','Ashok Leyland');
+INSERT into Bus values('228A','Ordinary','Ashok Leyland');
+INSERT into Bus values('230','Ordinary','Ashok Leyland');
+INSERT into Bus values('231','Ordinary','Ashok Leyland');
+INSERT into Bus values('231A','Ordinary','Ashok Leyland');
+INSERT into Bus values('235A','Ordinary','Ashok Leyland');
+INSERT into Bus values('235F','Ordinary','Ashok Leyland');
+INSERT into Bus values('238','Ordinary','Ashok Leyland');
+INSERT into Bus values('240','Ordinary','Ashok Leyland');
+INSERT into Bus values('241','Ordinary','Ashok Leyland');
+INSERT into Bus values('241A','Ordinary','Ashok Leyland');
+INSERT into Bus values('242','Ordinary','Ashok Leyland');
+INSERT into Bus values('243','Ordinary','Ashok Leyland');
+INSERT into Bus values('248','Ordinary','Ashok Leyland');
+
+INSERT into Bus values('248B','Ordinary','Ashok Leyland');
+INSERT into Bus values('250','Ordinary','Ashok Leyland');
+INSERT into Bus values('250AC','Ordinary','Ashok Leyland');
+INSERT into Bus values('251','Ordinary','Ashok Leyland');
+INSERT into Bus values('252','Ordinary','Ashok Leyland');
+INSERT into Bus values('252A','Ordinary','Ashok Leyland');
+INSERT into Bus values('252E','Ordinary','Ashok Leyland');
+INSERT into Bus values('258','Ordinary','Ashok Leyland');
+INSERT into Bus values('263','Ordinary','Ashok Leyland');
+INSERT into Bus values('263A','Ordinary','Ashok Leyland');
+INSERT into Bus values('270','Ordinary','Ashok Leyland');
+INSERT into Bus values('270A','Ordinary','Ashok Leyland');
+INSERT into Bus values('271','Ordinary','Ashok Leyland');
+INSERT into Bus values('279A','Ordinary','Ashok Leyland');
+INSERT into Bus values('280A','Ordinary','Ashok Leyland');
+INSERT into Bus values('281A','Ordinary','Ashok Leyland');
+INSERT into Bus values('281C','Ordinary','Ashok Leyland');
+
+INSERT into Bus values('286','Ordinary','Ashok Leyland');
+INSERT into Bus values('290','Ordinary','Ashok Leyland');
+INSERT into Bus values('295','Ordinary','Ashok Leyland');
+INSERT into Bus values('297A','Ordinary','Ashok Leyland');
+INSERT into Bus values('300','Ordinary','Ashok Leyland');
+INSERT into Bus values('300A','Ordinary','Ashok Leyland');
+INSERT into Bus values('300B','Ordinary','Ashok Leyland');
+INSERT into Bus values('301','Ordinary','Ashok Leyland');
+INSERT into Bus values('301A','Ordinary','Ashok Leyland');
+INSERT into Bus values('301D','Ordinary','Ashok Leyland');
+INSERT into Bus values('306','Ordinary','Ashok Leyland');
+INSERT into Bus values('311','Ordinary','Ashok Leyland');
+INSERT into Bus values('311C','Ordinary','Ashok Leyland');
+INSERT into Bus values('313D','Ordinary','Ashok Leyland');
+INSERT into Bus values('314B','Ordinary','Ashok Leyland');
+
+
+INSERT into Bus values('315','Ordinary','Ashok Leyland');
+INSERT into Bus values('323','Ordinary','Ashok Leyland');
+INSERT into Bus values('327A','Ordinary','Ashok Leyland');
+INSERT into Bus values('327C','Ordinary','Ashok Leyland');
+INSERT into Bus values('328H','Ordinary','Ashok Leyland');
+INSERT into Bus values('330','Ordinary','Ashok Leyland');
+INSERT into Bus values('335A','Ordinary','Ashok Leyland');
+INSERT into Bus values('340G','Ordinary','Ashok Leyland');
+INSERT into Bus values('342','Ordinary','Ashok Leyland');
+INSERT into Bus values('342A','Ordinary','Ashok Leyland');
+INSERT into Bus values('342F','Ordinary','Ashok Leyland');
+INSERT into Bus values('350D','Ordinary','Ashok Leyland');
+INSERT into Bus values('350G','Ordinary','Ashok Leyland');
+INSERT into Bus values('360','Ordinary','Ashok Leyland');
+
+INSERT into Bus values('360K','Ordinary','Ashok Leyland');
+
+INSERT into Bus values('365H','Ordinary','Ashok Leyland');
+INSERT into Bus values('375','Ordinary','Ashok Leyland');
+INSERT into Bus values('375B','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('375D','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('375E','Ordinary','Ashok Leyland/TATA');
+INSERT into Bus values('375F','Ordinary','Ashok Leyland');
+INSERT into Bus values('375G','Ordinary','Ashok Leyland');
+INSERT into Bus values('378','Ordinary','Ashok Leyland');
+INSERT into Bus values('378A','Ordinary','Ashok Leyland');
+INSERT into Bus values('378D','Ordinary','Ashok Leyland');
+INSERT into Bus values('378F','Ordinary','Ashok Leyland');
+INSERT into Bus values('378H','Ordinary','Ashok Leyland');
+
+INSERT into Bus values('378M','Ordinary','Ashok Leyland');
+INSERT into Bus values('390','Ordinary','Ashok Leyland');
+INSERT into Bus values('400A','Ordinary','Ashok Leyland');
+INSERT into Bus values('401','Ordinary','Ashok Leyland');
+INSERT into Bus values('401A','Ordinary','Ashok Leyland');
+INSERT into Bus values('401E','Ordinary','Ashok Leyland');
+INSERT into Bus values('401AF','Ordinary','Ashok Leyland');
+INSERT into Bus values('402','Ordinary','Ashok Leyland');
+INSERT into Bus values('402M','Ordinary','Ashok Leyland');
+INSERT into Bus values('410','Ordinary','Ashok Leyland');
+INSERT into Bus values('410F','Ordinary','Ashok Leyland');
+INSERT into Bus values('410M','Ordinary','Ashok Leyland');
+INSERT into Bus values('411','Ordinary','Ashok Leyland');
+
+
+
+
+INSERT into Bus values('500A','Ordinary/AC','Ashok Leyland/VOLVO');
+INSERT into Bus values('500B','Ordinary/AC','Ashok Leyland/VOLVO');
+INSERT into Bus values('500C','Ordinary/AC','Ashok Leyland/VOLVO');
+INSERT into Bus values('500D','Ordinary/AC','Ashok Leyland/VOLVO');
+INSERT into Bus values('500F','Ordinary/AC','Ashok Leyland/VOLVO');
+INSERT into Bus values('501A','Ordinary/AC','Ashok Leyland/VOLVO');
+INSERT into Bus values('501C','Ordinary/AC','Ashok Leyland/VOLVO');
+INSERT into Bus values('502','Ordinary/AC','Ashok Leyland/VOLVO');
+INSERT into Bus values('502D','Ordinary/AC','Ashok Leyland/VOLVO');
+INSERT into Bus values('502F','Ordinary/AC','Ashok Leyland/VOLVO');
+INSERT into Bus values('502H','Ordinary/AC','Ashok Leyland/VOLVO');
+INSERT into Bus values('600C','Ordinary/AC','Ashok Leyland/VOLVO');
+INSERT into Bus values('600F','Ordinary/AC','Ashok Leyland/VOLVO');
+INSERT into Bus values('600G','Ordinary/AC','Ashok Leyland/VOLVO');
+INSERT into Bus values('AS-1','Ordinary','Ashok Leyland');
+INSERT into Bus values('AS-7','Ordinary','Ashok Leyland');
+
+
+
+INSERT into Bus values('AS-10','Ordinary','Ashok Leyland');
+INSERT into Bus values('D-6','Ordinary','Ashok Leyland');
+INSERT into Bus values('FDR1','Ordinary','Ashok Leyland');
+INSERT into Bus values('FDR2','Ordinary','Ashok Leyland');
+INSERT into Bus values('FDR7','Ordinary','Ashok Leyland');
+INSERT into Bus values('K1','Ordinary','Ashok Leyland');
+INSERT into Bus values('K3','Ordinary','Ashok Leyland');
+
+INSERT into Bus values('1E','Ordinary','Ashok Leyland');
+INSERT into Bus values('1E','Ordinary','Ashok Leyland');
+
+
+
+
+CREATE table Fares
+(
+	RID int references Route(RID)on delete cascade,
+	Adult_Fare varchar(30),
+	Child_Fare varchar(30),
+	Senior_Fare varchar(30)
+);
+
+
+Create table Facilities
+(
+	Bus_No varchar(30) references Bus(Bus_No) on delete cascade,
+	RID int references Route(RID) on delete cascade,
+	adult_fare int,
+	child_fare int,
+	passes int
+);
+
+insert into Facilities values
+('1',1000,23,12,70);
+
+insert into Facilities values
+('1E',1001,12,24,70);
+
+insert into Facilities values
+('2A',1002,12,24,70);
+
+
+insert into Facilities values
+('3F',1004,22,11,70);
+
+insert into Facilities values
+('13',1005,19,10,70);
+
+insert into Facilities values
+('13F',1006,21,11,70);
+
+insert into Facilities values
+('15A',1007,19,10,70);
+
+insert into Facilities values
+('15E',1008,21,11,70);
+
+insert into Facilities values
+('25',1009,20,10,70);
+
+insert into Facilities values
+('60A',1010,21,11,70);
+
+insert into Facilities values
+('61',1011,21,11,70);
+
+insert into Facilities values
+('75B',1012,19,10,70);
+
+insert into Facilities values
+('75D',1013,24,12,70);
+
+insert into Facilities values
+('77',1014,24,12,70);
+
+insert into Facilities values
+('80',1015,14,7,70);
+
+insert into Facilities values
+('82',1016,20,10,70);
+
+insert into Facilities values
+('87',1017,17,9,70);
+
+insert into Facilities values
+('89',1018,19,10,70);
+
+insert into Facilities values
+('96A',1019,20,10,70);
+
+insert into Facilities values
+('96C',1020,19,10,70);
+
+insert into Facilities values
+('99A',1021,19,10,70);
+
+insert into Facilities values
+('100',1022,19,10,70);
+
+insert into Facilities values
+('111',1023,21,11,70);
+
+insert into Facilities values
+('111C',1024,19,10,70);
+
+insert into Facilities values
+('112A',1025,17,9,70);
+
+insert into Facilities values
+('119',1025,17,9,70);
+
+insert into Facilities values
+('125',1026,19,10,70);
+
+insert into Facilities values
+('131',1027,20,10,70);
+
+insert into Facilities values
+('140',1028,14,7,70);
+
+insert into Facilities values
+('140E',1029,19,10,70);
+
+insert into Facilities values
+('141',1030,14,7,70);
+
+insert into Facilities values
+('141K',1031,20,10,70);
+
+insert into Facilities values
+('144',1032,14,7,70);
+
+insert into Facilities values
+('144A',1033,14,7,70);
+
+insert into Facilities values
+('146',1034,17,9,70);
+
+insert into Facilities values
+('146B',1035,19,10,70);
+
+insert into Facilities values
+('161B',1036,17,9,70);
+
+insert into Facilities values
+('161D',1037,19,10,70);
+
+insert into Facilities values
+('163C',1038,17,9,70);
+
+insert into Facilities values
+('163F',1039,19,10,70);
+
+insert into Facilities values
+('165E',1040,19,10,70);
+
+insert into Facilities values
+('168A',1041,19,10,70);
+
+insert into Facilities values
+('171',1042,21,11,70);
+
+insert into Facilities values
+('171F',1043,21,11,70);
+
+insert into Facilities values
+('176',1044,22,11,70);
+
+insert into Facilities values
+('176A',1045,23,12,70);
+
+insert into Facilities values
+('195',1046,21,11,70);
+
+insert into Facilities values
+('201',1047,26,13,70);
+
+insert into Facilities values
+('201D',1048,19,10,70);
+
+insert into Facilities values
+('201H',1049,23,12,70);
+
+insert into Facilities values
+('210',1050,21,11,70);
+
+insert into Facilities values
+('210D',1051,20,10,70);
+
+insert into Facilities values
+('210FA',1052,23,12,70);
+
+insert into Facilities values
+('210N',1053,22,11,70);
+
+insert into Facilities values
+('210P',1054,23,12,70);
+
+insert into Facilities values
+('211',1055,25,13,70);
+
+insert into Facilities values
+('211D',1056,25,13,70);
+
+insert into Facilities values
+('211E',1057,25,13,70);
+
+insert into Facilities values
+('212',1058,23,12,70);
+
+insert into Facilities values
+('213A',1059,25,13,70);
+
+insert into Facilities values
+('214',1060,25,13,70);
+
+insert into Facilities values
+('215',1061,19,10,70);
+
+insert into Facilities values
+('215D',1062,22,11,70);
+
+insert into Facilities values
+('216',1063,25,13,70);
+
+insert into Facilities values
+('220B',1064,21,11,70);
+
+insert into Facilities values
+('221',1065,24,12,70);
+
+insert into Facilities values
+('221E',1066,23,12,70);
+
+insert into Facilities values
+('222',1067,21,11,70);
+
+insert into Facilities values
+('223A',1068,23,12,70);
+
+insert into Facilities values
+('225',1069,20,10,70);
+
+insert into Facilities values
+('226A',1070,24,12,70);
+
+insert into Facilities values
+('227',1071,23,12,70);
+
+insert into Facilities values
+('227A',1072,25,13,70);
+
+insert into Facilities values
+('228',1073,24,12,70);
+
+insert into Facilities values
+('228A',1074,25,13,70);
+
+insert into Facilities values
+('230',1075,23,12,70);
+
+insert into Facilities values
+('231A',1076,25,13,70);
+
+insert into Facilities values
+('235A',1077,20,10,70);
+
+insert into Facilities values
+('235F',1078,23,12,70);
+
+insert into Facilities values
+('238',1079,23,12,70);
+
+insert into Facilities values
+('240',1080,22,11,70);
+
+insert into Facilities values
+('241',1081,22,11,70);
+
+insert into Facilities values
+('241A',1082,24,12,70);
+
+insert into Facilities values
+('242',1083,23,12,70);
+
+insert into Facilities values
+('243',1084,27,14,70);
+
+insert into Facilities values
+('248',1085,25,13,70);
+
+insert into Facilities values
+('248B',1086,27,14,70);
+
+insert into Facilities values
+('250',1087,29,15,70);
+
+insert into Facilities values
+('250AC',1088,23,12,70);
+
+insert into Facilities values
+('251',1089,22,11,70);
+
+insert into Facilities values
+('252',1090,26,13,70);
+
+insert into Facilities values
+('252A',1091,21,11,70);
+
+insert into Facilities values
+('252E',1092,21,11,70);
+
+insert into Facilities values
+('253A',1093,25,13,70);
+
+insert into Facilities values
+('255',1096,24,12,70);
+
+insert into Facilities values
+('258',1097,25,13,70);
+
+insert into Facilities values
+('263',1098,21,11,70);
+
+insert into Facilities values
+('263A',1099,25,13,70);
+
+insert into Facilities values
+('270',1100,21,11,70);
+
+insert into Facilities values
+('270A',1101,24,12,70);
+
+insert into Facilities values
+('271',1102,23,12,70);
+
+insert into Facilities values
+('279A',1103,19,10,70);
+
+insert into Facilities values
+('280A',1104,25,13,70);
+
+insert into Facilities values
+('281A',1105,26,13,70);
+
+insert into Facilities values
+('281C',1106,23,12,70);
+
+insert into Facilities values
+('286',1107,19,10,70);
+
+insert into Facilities values
+('290',1108,19,10,70);
+
+insert into Facilities values
+('295',1109,23,12,70);
+
+insert into Facilities values
+('297A',1110,29,15,70);
+
+insert into Facilities values
+('300',1111,19,10,70);
+
+insert into Facilities values
+('300A',1112,23,12,70);
+
+insert into Facilities values
+('300B',1113,19,10,70);
+
+insert into Facilities values
+('301',1114,24,12,70);
+
+insert into Facilities values
+('301A',1114,21,11,70);
+
+insert into Facilities values
+('301D',1115,25,13,70);
+
+insert into Facilities values
+('306',1116,25,13,70);
+
+insert into Facilities values
+('311',1117,20,10,70);
+
+insert into Facilities values
+('311C',1118,20,10,70);
+
+insert into Facilities values
+('313D',1119,22,11,70);
+
+insert into Facilities values
+('314B',1120,22,11,70);
+
+insert into Facilities values
+('315',1121,22,11,70);
+
+insert into Facilities values
+('323',1122,27,14,70);
+
+insert into Facilities values
+('327A',1123,25,13,70);
+
+insert into Facilities values
+('327C',1124,29,15,70);
+
+insert into Facilities values
+('328H',1125,25,13,70);
+
+insert into Facilities values
+('330',1126,21,11,70);
+
+insert into Facilities values
+('335A',1127,25,13,70);
+
+insert into Facilities values
+('340G',1128,23,12,70);
+
+insert into Facilities values
+('342',1129,24,12,70);
+
+insert into Facilities values
+('342A',1130,25,13,70);
+
+insert into Facilities values
+('342F',1131,25,13,70);
+
+insert into Facilities values
+('350D',1132,25,13,70);
+
+insert into Facilities values
+('350G',1133,25,13,70);
+
+insert into Facilities values
+('360',1134,26,13,70);
+
+insert into Facilities values
+('360K',1135,27,14,70);
+
+insert into Facilities values
+('365',1136,24,12,70);
+
+insert into Facilities values
+('365H',1137,25,13,70);
+
+insert into Facilities values
+('375',1138,22,11,70);
+
+insert into Facilities values
+('375B',1139,25,13,70);
+
+insert into Facilities values
+('375D',1140,19,10,70);
+
+insert into Facilities values
+('375E',1141,22,11,70);
+
+insert into Facilities values
+('375F',1142,23,12,70);
+
+insert into Facilities values
+('375G',1143,25,13,70);
+
+insert into Facilities values
+('378',1144,25,13,70);
+
+insert into Facilities values
+('378A',1145,25,13,70);
+
+insert into Facilities values
+('378D',1146,25,13,70);
+
+insert into Facilities values
+('378F',1147,25,13,70);
+
+insert into Facilities values
+('378H',1148,25,13,70);
+
+insert into Facilities values
+('378M',1149,25,13,70);
+
+insert into Facilities values
+('390',1150,25,13,70);
+
+insert into Facilities values
+('400A',1151,19,10,70);
+
+insert into Facilities values
+('401',1152,23,12,70);
+
+insert into Facilities values
+('401A',1153,23,12,70);
+
+insert into Facilities values
+('401E',1154,25,13,70);
+
+insert into Facilities values
+('401AF',1155,26,13,70);
+
+insert into Facilities values
+('402',1156,24,12,70);
+
+insert into Facilities values
+('402M',1157,24,12,70);
+
+insert into Facilities values
+('410',1158,25,13,70);
+
+insert into Facilities values
+('410F',1159,24,12,70);
+
+insert into Facilities values
+('410M',1160,24,12,70);
+
+insert into Facilities values
+('411',1161,23,12,70);
+
+insert into Facilities values
+('411D',1162,25,13,70);
+
+insert into Facilities values
+('500A',1163,25,13,70);
+
+insert into Facilities values
+('500B',1164,29,15,70);
+
+insert into Facilities values
+('500C',1165,23,12,70);
+
+insert into Facilities values
+('500D',1166,25,13,70);
+
+insert into Facilities values
+('500F',1167,25,13,70);
+
+insert into Facilities values
+('501A',1168,25,13,70);
+
+insert into Facilities values
+('501C',1169,23,12,70);
+
+insert into Facilities values
+('502',1170,30,15,70);
+
+insert into Facilities values
+('502D',1171,27,14,70);
+
+insert into Facilities values
+('502F',1172,22,11,70);
+
+insert into Facilities values
+('502H',1173,24,12,70);
+
+insert into Facilities values
+('600C',1174,23,12,70);
+
+insert into Facilities values
+('600F',1175,25,13,70);
+
+insert into Facilities values
+('600G',1176,25,13,70);
+
+insert into Facilities values
+('AS-1',1177,10,5,70);
+
+insert into Facilities values
+('AS-7',1178,10,5,70);
+
+insert into Facilities values
+('AS-10',1179,9,5,70);
+
+insert into Facilities values
+('D-6',1180,29,15,70);
+
+insert into Facilities values
+('FDR1',1181,23,12,70);
+
+insert into Facilities values
+('FDR2',1182,23,12,70);
+
+insert into Facilities values
+('FDR7',1183,21,11,70);
+
+insert into Facilities values
+('K1',1184,25,13,70);
+
+insert into Facilities values
+('K3',1185,24,12,70);
+CREATE table Route
+(
+	Bus_no varchar(30) references Bus(Bus_No),
+	RID int primary key,
+	source varchar(50),
+	destination varchar(50),
+	via varchar(50),
+	distance varchar(30),
+	time varchar(30)
+);
+insert into Route values
+('1','1000','Jayanagar 9th Block','Yeshwanthpur Railway Station','Majestic','19.6 Km','1:25 min');
+
+insert into Route values
+('1E','1001','JP Nagar 6th phase','Chowdeshwari nagar','Malleshwaram','20.8 Km','1:45 min');
+
+insert into Route values
+('2','1002','JP Nagar 6th Phase','Kempegowda Bus Station','Jayanagar TTMC','14.5 Km','0:45 min');
+
+insert into Route values
+('2A','1003','JP Nagar 1st Phase','Kempegowda Bus Station','Jayanagar TTMC','13.7 Km','0:45 min');
+
+insert into Route values
+('3F','1004','JP Nagar 3rd Phase','Hosakerehalli Village','Jayanagar TTMC','13.3 Km','0:55 min');
+
+insert into Route values
+('13','1005','Banashankari TTMC','Shivajinagar TTMC','Jayanagar TTMC','11.7 Km','0:45 min');
+
+insert into Route values
+('13F','1006','Chennammanakera Achukattu','Shivajinagar TTMC','Jayanagar TTMC','16.5 Km','1:00 min');
+
+insert into Route values
+('15A','1007','Padmanabanagar','KR Market','Kumaraswamy Layout','8.3 Km','1:30 min');
+
+insert into Route values
+('15E','1008','Kumaraswamy Layout','Kempegowda Bus Station','KR Market','15.2 Km','1:10 min');
+
+insert into Route values
+('25','1009','BTM Layout Bus Stop','Kempegowda Bus Station','Jayanagar TTMC','14.4 Km','1:10 min');
+
+insert into Route values
+('60A','1010','Vijayanagar TTMC','Jayanagar 9th Block','Jayanagar TTMC','14.5 Km','1:00 min');
+
+insert into Route values
+('61','1011','Kempegowda Bus Station','Vijaynagar TTMC','Magadi Road','6.2 Km','1:00 min');
+
+insert into Route values
+('75B','1012','Hampi Nagar','Malleshwaram 18th Cross','Rajaji Nagar','12 Km','0:50 min');
+
+insert into Route values
+('75D','1013','Chandra Layout 1st Stage','Chowdeshwari Bus Stand JP Park','Yeshwanthpur TTMC','17.8 Km','1:15 min');
+
+insert into Route values
+('77','1014','Mahalakshmi Layout','KR Market','Rajaji Nagar','12.01 Km','0:50 min');
+
+insert into Route values
+('80','1015','Mahalakshmi Layout','Kempegowda Bus Station','Rajaji Nagar','7.2 Km','0:35 min');
+
+insert into Route values
+('82','1016','Kempegowda Bus Station','Kempegowda Bus Station','Malleshwaram',',14.5 Km','1:00 min');
+
+insert into Route values
+('87','1017','Hampinagara','Kempegowda Bus Station','Magadi Road','7.1 Km','0:35 min');
+
+insert into Route values
+('89','1018','Kurubarahalli','Kempegowda Bus Station','Rajaji Nagar','8.2 Km','0:40 min');
+
+insert into Route values
+('96A','1019','Kempegowda Bus Station','Kempegowda Bus Station','Rajaji Nagar','14.7 Km','1:00 min');
+
+insert into Route values
+('96C','1020','Shankarnag Bus Station','Kempegowda Bus Station','Rajaji Nagar','10.8 Km','0:40 min');
+
+insert into Route values
+('99A','1021','Kempegowda Bus Station','Mohan Kumar Nagar','Yeshwanthpur TTMC','11 Km','0:40 min');
+
+insert into Route values
+('100','1022','Choweshwari Bus Stand','Shivajinagar TTMC','Malleshwaram','6.5 Km','0:55 min');
+
+insert into Route values
+('111','1023','Kaval Byrasandra','KR Market','JC Nagar','19.7 Km','0:50 min');
+
+insert into Route values
+('111C','1024','Kempegowda Bus Station','Kaval Byrasandra Bus Stop','JC Nagar','11.7 Km','0:50 min');
+
+insert into Route values
+('112A','1025','Kaval Byrasandra','Shivajinagar TTMC','JC Nagar','9.8 Km','0:40 min');
+
+insert into Route values
+('119','1026','Chinnappa Garden','Shivajinagar TTMC','Rajaji Nagar','4.9 Km','0:30 min');
+
+insert into Route values
+('125','1027','KR Market','Pottery Town','Shivajinagar TTMC','11.3 Km','0:45 min');
+
+insert into Route values
+('131','1028','Domluru TTMC','Kempegowda Bus Station','Indiranagar','11.5 Km','0:55 min');
+
+insert into Route values
+('140','1029','Viveka Nagar','KR Market','Richmond Circle','7.1 Km','0:30 min');
+
+insert into Route values
+('140E','1030','Ejipura','KR Market','Richmond Circle','8.5 Km','0:35 min');
+
+insert into Route values
+('141','1031','Viveka Nagar','Shivajinagar TTMC','Auston Town','9.2 Km','0:25 min');
+
+insert into Route values
+('141K','1032','Shivajinagar TTMC','Koramangala','Viveka Nagar','10.9 Km','0:30 min');
+
+insert into Route values
+('144','1033','Neelasandra Bus Station','Shivajinagar TTMC','Mayohall','5.4 Km','0:25 min');
+
+insert into Route values
+('144A','1034','Gajendra Nagar','Shivajinagar TTMC','Auston Town','6.3 Km','0:30');
+
+insert into Route values
+('146','1035','Viveka Nagar','Kempegowda Bus Station','Auston Town','11.6 Km','0:40 min');
+
+insert into Route values
+('146B','1036','Seenivagilu','Kempegowda Bus Station','Ejipura','12.4 Km','0:45 min');
+
+insert into Route values
+('161B','1037','Jai Bhima Nagar','Shivajinagar TTMC','Wilson Garden','10.9 Km','0:40 min');
+
+insert into Route values
+('161D','1038','BTM Layout Bus Stop','Shivajinagar TTMC','Wilson Garden','12.6 Km','0:55 min');
+
+insert into Route values
+('163C','1039','Lakshman Roa Nagar','KR Market','Richmond Circle','6.7 Km','0:30 min');
+
+insert into Route values
+('163F','1040','Ejipura','AGS Layout Cross',' ','20 Km','1:10 min');
+
+insert into Route values
+('165E','1041','Adugodi Police Quaters','Kempegowda Bus Station','Wilson Garden','10.2 Km','0:35 min');
+
+insert into Route values
+('168A','1042','Jai Bhima Nagar','KR Market','Wlison Garden','10.6 Km','0:40 min');
+
+insert into Route values
+('171','1043','Koramangala','Kempegowda Bus Station','Wilson Garden','16.9 Km','1:00 min');
+
+insert into Route values
+('171F','1044','Kempegowda Bus Station','Koramangala','Wilson Garden','13.5 Km','0:50 min');
+
+insert into Route values
+('176','1045','Hampi Nagar','Kaval Byrasandra','Rajaji Nagar','17.8 Km','1:25 min');
+
+insert into Route values
+('176A','1046','MCTC Bus Stand','Kaval Byrasandra','Malleshwaram Circle','18.8 Km','1:05 min');
+
+insert into Route values
+('195','1047','Shivajinagar TTMC','Chandra Layout','Vijaynagar TTMC','14.6 Km','1:20 min');
+
+insert into Route values
+('201','1048','Srinagar','Domluru TTMC','Banashankari TTMC','29.1 Km','2:10 min');
+
+insert into Route values
+('201D','1049','Central Silk Board','Binnamangala Hosakote Road','Domlur TTMC','16 Km','0:50 min');
+
+insert into Route values
+('201H','1050','Avalahalli BDA Park','Koramangala','Banashankari TTMC','15.9 Km','1:05 min');
+
+insert into Route values
+('210','1051','KR Market','Uttarahalli','Banashankari TTMC','13.2 Km','0:45 min');
+
+insert into Route values
+('210D','1052','KR Market','Vasanthapura','Banashankari TTMC','126 Km','0:45 min');
+
+insert into Route values
+('210FA','1053','Shivajinagar TTMC','Poorna Prajna Layout','Banashankari TTMC','21.33 Km','1:00 min');
+
+insert into Route values
+('210N','1054','Kempegowda Bus Station','Uttarahalli','KR Market','15.8 Km','1:00 min');
+
+insert into Route values
+('210P','1055','Kempegowda Bus Station','Chikkalsandra Bus Station','KR Market','15.7 Km','0:55 min');
+
+insert into Route values
+('211','1056','KR Market','Somanahalli','Banashankari TTMC','30.11 Km','1:15 min');
+
+insert into Route values
+('211D','1057','KR Market','Naganayakanahalli','Banashankari TTMC','28.6 Km','1:20 min');
+
+insert into Route values
+('211E','1058','KR Market',' Kanakapura Road','Kadrenahalli','29.7 Km','1:15 min');
+
+insert into Route values
+('212','1059','KR Market','Agara Sarjapura Road','Banashankari TTMC','21.5 Km','1:00 min');
+
+insert into Route values
+('213A','1060','KR Market','Nettigere','Banashankari TTMC','28.7 Km','1:15 min');
+
+insert into Route values
+('214','1061','KR Market','Tataguppe near Tharalu','Banashankari','32.3 Km','1:30 min');
+
+insert into Route values
+('215','1062','KR Market','Amruthnagar Kanakapura Road','Banshankari TTMC','17.9 Km','1:00 min');
+
+insert into Route values
+('215D','1063','Kempegowda Bus Station','Eshawara Layout','Jayanagar TTMC','15.8 Km','0:50 min');
+
+insert into Route values
+('216','1064','KR Market','Banjara Palya','Banashankari TTMC','28.6 Km','1:25 min');
+
+insert into Route values
+('220B','1065','Kempegowda Bus station','Kengeri Satellite Town Society','Bangalore University gate','13.1 Km','0:50 min');
+
+insert into Route values
+('221','1066','KR Market','Gulganahalli','Kengeri TTMC','27.9 Km','1:30 min');
+
+insert into Route values
+('221E','1067','Ramasandra','KR Market','Kengeri','20.32 Km','1:00 min');
+
+insert into Route values
+('222','1068','Kengeri Satellite Town Society','KR Market','Nayandahalli','18.24 Km','1:15 min');
+
+insert into Route values
+('223A','1069','Dodda Basthi','Shivajinagar TTMC','Rajarajeshwari Nagar','21.6 Km','1:05 min');
+
+insert into Route values
+('225','1070','Channasandra BEML 5th Stage','KR Market','','15.9 Km','0:50 min');
+
+insert into Route values
+('226A','1071','Kempegowda Bus Station','Hampapura','Kengeri','30.2 Km','1:15 min');
+
+insert into Route values
+('227','1072','KR Market','Ramohalli','Kengeri','21.5 Km','1:20 min');
+
+insert into Route values
+('227A','1073','KR Market','Mayasandra Doda Aladamara','Kengeri TTMC','32.4 Km','1:55 min');
+
+insert into Route values
+('228','1074','KR Market','Gonipura','Kengeri','24.5 Km','1:05 min');
+
+insert into Route values
+('228A','1075','Parasanapalya','KR Market','Kumbalgodu','31 Km','1:20 min');
+
+insert into Route values
+('230','1076','Byrohalli','KR Market','Kengeri TTMC','21.4 Km','1:00 min');
+
+insert into Route values
+('231A','1077','Avaregere','KR Market','Kengeri TTMC','32 Km','1:30 min');
+
+insert into Route values
+('235A','1078','Nagarbhavi Village','KR Market','','14.5 Km','1:00 min');
+
+insert into Route values
+('235F','1079','Kempegowda Bus Station','Sports Authority of India','Vijayanagar TTMC','19.4 Km','1:15 min');
+
+insert into Route values
+('238','1080','Nrupathunga Nagar','Kempegowda Bus Station','Vijay Nagara','15.8 Km','1:15 min');
+
+insert into Route values
+('240','1081','Machohalli','KR Market','Magadi Road','21.2 Km','0:55 min');
+
+insert into Route values
+('241','1082','Kenchanapura','KR Market','Magadi Road','17.4 Km','0:55 min');
+
+insert into Route values
+('241A','1083','Hullalu Satellite Town Jnanabharathi','KR Market','Magadi road','19.8 Km','1:45 min');
+
+insert into Route values
+('242','1084','Tavarekere Magadi Road','KR Market','Kamakshipalya','31.6 Km','1:35 min');
+
+insert into Route values
+('243','1085','Andrahalli Magadi Road','KR Market','Kamakshipalya','17.9 Km','0:50 min');
+
+insert into Route values
+('248','1086','KR Market','Jalahalli Cross','Vijayanagar TTMC','36 km','2:00 min');
+
+insert into Route values
+('248B','1087','Hampi Nagar','Chikkabanavara','Vijayanagar TTMC','36 Km','1:45 min');
+
+insert into Route values
+('250','1088','KR Market','Chikka Banavara Railway Gate','Yeshwanthpur TTMC','18.9 Km','1:00 min');
+
+insert into Route values
+('250AC','1089','Yeshwanthpura TTMC','Chikkabanavara','Peenya 1st Stage','18.3 Km','1:00 min');
+
+insert into Route values
+('251','1090','KR Market','Shivakote','Yeshwanthpur TTMC','36.8 Km','1:40 min');
+
+insert into Route values
+('252','1091','Kempegowda Bus Station','Peenya 2nd Stage','Yeshwanthpur TTMC','18.9 Km','1:15 min');
+
+insert into Route values
+('252A','1092','Peenya 2nd Stage','Shivajinagar TTMC','Yeshwanthpur TTMC','1.6 Km','0:55 min');
+
+insert into Route values
+('252E','1093','Kempegowda Bus Station','Laggere','Yeshwanthpur TTMC','14.2 Km','1:00 min');
+
+insert into Route values
+('253A','1094','KR Market','Byatha','Yeshwanthpur TTMC','32.1 Km','1:45 min');
+
+insert into Route values
+('255','1095','Mathahalli','KR Market','Yeshwanthpur TTMC','31.6 Km','1:25 min');
+
+insert into Route values
+('258','1096','Nelamangala Bus Stand','KR Market','Yeshwanthpur TTMC','37.2 Km','1:35 min');
+
+insert into Route values
+('263','1097','Kammasandra Lakshmipura','KR Market','Yeshwanthpur TTMC','22.5 Km','1:10 min');
+
+insert into Route values
+('263A','1098','KR Market','Thippenahalli','Yeshwanthpur','22.5 Km','1:15 min');
+
+insert into Route values
+('270','1099','Anchepalya Nelamangala Road','Shivajinagar TTMC','Jalahalli Cross','23.5 Km','1:00 min');
+
+insert into Route values
+('270A','1100','Jalahalli Cross','Shivajinagar TTMC','Yeshwanthpura','17.3 Km','1:00 min');
+
+insert into Route values
+('271','1101','Jalahalli East Area 7th camp','Kempegowda Bus Station','Malleshwaram','15.9 Km','0:55 min');
+
+insert into Route values
+('279A','1102','KR Market','Bhoopapsandra','Kempegowda Bus Station','12.9 Km','0:40 min');
+
+insert into Route values
+('280A','1103','KR Market','Agarahara Layout','Yelahanka','21.5 Km','1:00 min');
+
+insert into Route values
+('281A','1104','Kempegowda Bus Station','Yelahanka','Hebbala','20.2 Km','0:45 min');
+
+insert into Route values
+('281C','1105','Kempegowda Bus Station','IAF','Hebbala','37 Km','1:35 min');
+
+insert into Route values
+('286','1106','KR Market','Jakkur','Hebbala','17 Km','0:50 min');
+
+insert into Route values
+('290','1107','Shivajinagar TTMC','Thanisandra','Nagavara','10.4 Km','1:30 min');
+
+insert into Route values
+('295','1108','KR Market','Dodda Gubbi','Vasantha Nagar','24.9 Km','1:10 min');
+
+insert into Route values
+('297A','1109','KR Market','Indrasanahalli Devanahalli','Yelahanka','46 Km','1:45 min');
+
+insert into Route values
+('300','1110','Shivajinagar TTMC','Banasawadi','Clarence School','9.1 Km','0:30 min');
+
+insert into Route values
+('300A','1111','B Channasandra','KR Market','Jai Bharath Nagara','16.2 Km','0:55 min');
+
+insert into Route values
+('300B','1112','Banaswadi','Kempegowda Bus Station','Jai Bharath Nagara','18.8 Km','0:45 min');
+
+insert into Route values
+('301','1114','Channasandra K','KR Market','Jai Bharath Nagara','19.8 Km','1:10 min')
+
+insert into Route values
+('301A','1114','Banaswadi','KR Market','Jai Bharath Nagara','11.8 Km','0:50 min')
+
+insert into Route values
+('301D','1115','Shivajinagar TTMC','Hosakote Bus Stand','Banaswadi','33.3 Km','1:45 min');
+
+insert into Route values
+('306','1116','KR Market','Devanagundi','KR Puram Railway Station','34.4 km','1:20 min');
+
+insert into Route values
+('311','1117','Shivajinagar TTMC','KR Puram','Beniganahalli','14.6 Km','0:50 min');
+
+insert into Route values
+('311C','1118','Shivajinagar TTMC','Mini Taj Mahal','BMTC Depot-6','12.8 Km','0:40 Km');
+
+insert into Route values
+('313D','1119','KR Market','KR puram','Halasaru','18.5 Km','0:55 min');
+
+insert into Route values
+('314B','1120','Kempegowda Bus Station','C V Raman Nagar','Halasuru','17.9 Km','1:10 min');
+
+insert into Route values
+('315','1121','Kempegowda Bus Station','KR Puram','Halasuru','18.4 Km','1:25 min');
+
+insert into Route values
+('323','1122','KR Market','Baguru','Domluru TTMC','38.3 Km','1:40 min');
+
+insert into Route values
+('327A','1123','Kempegowda Bus Station','Dommasandra','Domluru TTMC','30 Km','1:30 min');
+
+insert into Route values
+('327C','1124','KR Market','Attibele Hosur Road','Marathalli','44.4 Km','2:00 min');
+
+insert into Route values
+('328H','1125','Attibele Hosur Road','Hosakote Bus Stand','Sarjapura','40 Km','1:50 min');
+
+insert into Route values
+('330','1126','Shivajinagar TTMC','Marathalli','Hal','14 Km','1:20 min');
+
+insert into Route values
+('335A','1127','Kempegowda Bus Station','Kadugodi','Domluru TTMC','28 Km','1:30 min');
+
+insert into Route values
+('340G','1128','Kempegowda Bus Station','HSR BDA complex','Jayanagar TTMC','16.1 Km','1:00 min');
+
+insert into Route values
+('342','1129','KR Market','Dommasandra','Koramangala','25.2 Km','1:15 min');
+
+insert into Route values
+('342A','1130','KR Market','Sarjapura','Koramangala','29 Km','1:15 min');
+
+insert into Route values
+('342F','1131','Kempegowda Bus Station','Sarjapura','Wilson Garden','31.6 Km','1:45 min');
+
+insert into Route values
+('350D','1132','KR Market','Sampige Nagar','Bangalore Dairy Circle','23.4 Km','1:15 min');
+
+insert into Route values
+('350G','1133','KR Market','Bommasandra Indl Area','Bangalore Dairy Circle','24.3 Km','1:20 min');
+
+insert into Route values
+('360','1134','KR Market','Attibele Hosur Road','Bangalore Dairy Circle','37 Km','1:40 min');
+
+insert into Route values
+('360K','1135','Kempedowda Bus Station','Attibele','Electronics','35.8 Km','1:45 min');
+
+insert into Route values
+('365','1136','Kempegowda Bus Station','Bannerghatta National Park','Bangalore Dairy Circle','31 Km','1:25 min');
+
+insert into Route values
+('365H','1137','Kempegowda Bus Station','Jigani','Jayanagar TTMC','31.5 Km','1:40 min');
+
+insert into Route values
+('375','1138','Kengeri KBH Quaters Shirke','Byrasandra Jayanagar','Banashankari TTMC','20.6 km','1:00 min');
+
+insert into Route values
+('375B','1139','Kengeri KBH Quaters Shirke','Shanthinagar TTMC','Banashankari TTMC','23.7 km','1:25 min');
+
+insert into Route values
+('375D','1140','Banashankari TTMC','Kengeri TTMC','Uttarahalli','11.82 Km','1:00 min');
+
+insert into Route values
+('375E','1141','Kengeri TTMC','Banashankari TTMC','Uttarahalli TTMC','13.3 Km','0:50 min');
+
+insert into Route values
+('375F','1142','Kengeri TTMC','Srinagar','Uttarahalli','15.8 Km','0:55 min');
+
+insert into Route values
+('375G','1143','Banashankari TTMC','Bidadi,'Kengeri TTMC','31 Km','1:30 min');
+
+insert into Route values
+('378','1144','Electronics City','Kengeri TTMC','Utarahalli','34.5 Km','1:40');
+
+insert into Route values
+('378A','1145','Jigani','Kengeri TTMC','Gottigere','30.8 Km','1:40 min');
+
+insert into Route values
+('378D','1146','Electronic City','Kengeri TTMC','Gottegeri','37.8 Km','1:30 min');
+
+insert into Route values
+('378F','1147','Banashankari TTMC','Anekal Main Bus Stand','Gottigere','39.9 Km','2:00 min');
+
+insert into Route values
+('378H','1148','ISRO Layout','Electronic City','','22Km','1:05 min');
+
+insert into Route values
+('378M','1149','Electronic City','Chikkalsandra Bus Stand','Gottigere','27.4 Km','1:20 min');
+
+insert into Route values
+('390','1150','Hosakote Bus Stand','Chikka Thirupathi','Dunnasandra','39 Km','1:30 min');
+
+insert into Route values
+('400A','1151','HAL Main Gate','KR Puram','Kasthuri Nagar','12.2 Km','0:40 min');
+
+insert into Route values
+('401','1152','Yelahanka','Yeshwanthpur TTMC','MS Palya','18.8 Km','1:30 min');
+
+insert into Route values
+('401A','1153','Yelahanka','Peenya 2nd Stage','MS Palya','19.7 Km','1:10 min');
+
+insert into Route values
+('401E','1154','Yelahanka','Chandra Layout','Mathekeri','32 km','2:30 min');
+
+insert into Route values
+('401AF','1155','Yelahanka','Kengeri TTMC','Peenya 2nd Stage','35.7 Km','1:40 min');
+
+insert into Route values
+('402','1156','KR Market','Yelahanka Sattelite Town 5th Phase','Hebbala','22.3 Km','1:05 min');
+
+insert into Route values
+('402M','1157','Yelahanka Satellite Town 5th Phase','Chikkalsandra Bus Stand','','34.7 Km','1:45 min');
+
+insert into Route values
+('410','1158','Bommanahalli Hosur Road','Jalahalli Cross','Banashankari TTMC','30.3 Km','2:00 min');
+
+insert into Route values
+('410F','1159','Jayanagar TTMC','Yeshwanthpur TTMC','Banashankari TTMC','24 Km','1:30 min');
+
+insert into Route values
+('410M','1160','Banashankari TTMC','Yeshwanthpur TTMC','Nayadahalli Railway Gate','22 Km','1:15 min');
+
+insert into Route values
+('411','1161','ISRO Layout','Domluru TTMC','Banashankari TTMC','20.6 Km','1:10 min');
+
+insert into Route values
+('411D','1162','Chandapura','Marathahalli Bridge','HSR Layout','28.4 Km','1:20 min');
+
+insert into Route values
+('500A','1163','Banashankari TTMC','Hebbala','KR Puram Railway Station','37.8 Km','1:45 min');
+
+insert into Route values
+('500B','1164','Yeshwanthpur TTMC','Central Silk Board','Marathahalli','30.2 Km','1:20 min');
+
+insert into Route values
+('500C','1165','Central Silk Board','KR Puram','Tin Factory','24.1 Km','1:15 min');
+
+insert into Route values
+('500D','1166','Hebbala','Central Silk Board','Marathahalli','30.2 Km','1:40 min');
+
+insert into Route values
+('500F','1167','Central Silk Board','Kadugodi','Marathahalli','24 Km','1:30 min');
+
+insert into Route values
+('501A','1168','Hebbala','Banashankari TTMC','Kengeri TTMC','76 Km','2:00 min');
+
+insert into Route values
+('501C','1169','Hebbala','Kengeri TTMC','Nagarbhavi','24 Km','1:20 min');
+
+insert into Route values
+('502','1170','Kengeri Satellite Town Society','Kadugodi','Banashankari TTMC','50.3 Km','2:15 min');
+
+insert into Route values
+('502D','1171','KR Puram Railway Station','Kengeri TTMC','Hebbala','36.8 Km','1:40 min');
+
+insert into Route values
+('502F','1172','Kengeri TTMC','Jalahalli Cross','Peenya 2nd Stage','20.7 km','1:00 min');
+
+insert into Route values
+('502H','1173','Kengeri TTMC','Chikkabanavara','Peenya 2nd Stage','26 Km','1:20 min');
+
+insert into Route values
+('600C'1174','Banashankari TTMC','Chandapura','Central Silk Board','20.5 Km','1:30 min');
+
+insert into Route values
+('600F','1175','Banashankari TTMC','Attibele Hosur Road','Central Silk Board','28.9 Km','1:35 min');
+
+insert into Route values
+('600G','1176','ISRO Layout','Chandapura','Central Silk Board','25.2 Km','1:20 min');
+
+insert into Route values
+('AS-1','1177','Banashankari TTMC','Avalahalli New BDA Layout','Konanakunte',' ',' ');
+
+insert into Route values
+('AS-7','1178','Peenya 2nd Stage','Chikkabanavara','Jalahalli Cross','9.9 Km','0:35 min');
+
+insert into Route values
+('AS-10','1179','Bommasandra','Jigani','BIOCON','9 Km','0:25 min');
+
+insert into Route values
+('D-6','1180','Kengeri Satellite town Society','Kadugodi','Central Silk Board','48.3 Km','2:10 min');
+
+insert into Route values
+('FDR1','1181','Vasanthapura','Vasanthapura','Jayanagar 4th Block','19 Km','1:20 min');
+
+insert into Route values
+('FDR2','1182','Vasanthapura','Vasanthapura','Jayanagar 4th Block','19 Km','1:20 min');
+
+insert into Route values
+('FDR7','1181','Chikkalsandra Bus Stand','Chikkalsandra Bus Stand','Kengeri TTMC','24.7 Km','1:25 min');
+
+insert into Route values
+('K1','1183','Madiwala','RMC Yard Yeshwanthpur','Domluru TTMC','27.8 Km','1:55 min');
+
+insert into Route values
+('K3','1184','Basaveshwara Nagar','CPWD Quarters','Vijay Nagar TTMC','30 Km','1:55 min ');
+
+
+
+
+INSERT into Staff values('500','1','Amar','Driver','25000','23','1000');
+INSERT into Staff values('501','1E','Anirudh','Conductor','25000','22','1001');
+INSERT into Staff values('502','2','Keshavraj','Driver','2500','25','1002');
+INSERT into Staff values('503','2A','Dhanraj','Conductor','25000','21','1003');
+INSERT into Staff values('504','3F','Mohammed','Driver','25000','21','1004');
+INSERT into Staff values('505','13','Iqbal Abdulla','Conductor','25000','21','1005');
+INSERT into Staff values('506','13F','Yagnik','Driver','30000','33','1006');
+INSERT into Staff values('507','15A','Shriraj J','Conductor','25000','25','1007');
+INSERT into Staff values('508','15E','Vinay L','Driver','25000','23','1008');
+INSERT into Staff values('509','25','Chakravarthy A','Driver','25000','21','1009');
+INSERT into Staff values('510','60A','Ashok','Driver','25000','21','1010');
+INSERT into Staff values('511','61','Shivraj','Conductor','25000','22','1011');
+INSERT into Staff values('512','75B','Cariappa','Driver','25000','24','1012');
+INSERT into Staff values('513','75D','Balu','Conductor','25000','22','1013');
+INSERT into Staff values('514','77','BalKrishna','Driver','35000','33','1014');
+INSERT into Staff values('515','80','Ananthu','Conductor','20000','19','1016');
+INSERT into Staff values('516','82','Jayan','Driver','20000','16','1017');
+INSERT into Staff values('517','87','Mutthuraja','Conductor','20000','17','1018');
+INSERT into Staff values('518','89','Shanthkumar','Driver','20000','18','1019');
+INSERT into Staff values('519','96A','Sirivardhan','Conductor','20000','19','1020');
+INSERT into Staff values('520','96C','Girish','Driver','20000','20','1021');
+INSERT into Staff values('521','99A','Nandu Prakash','Conductor','20500','21','1022');
+INSERT into Staff values('522','100','Munswami','Driver','20500','22','1023');
+INSERT into Staff values('523','111','Raja','Conductor','20500','25','1024');
+INSERT into Staff values('524','111C','Muniraja','Driver','15000','6','1025');
+INSERT into Staff values('525','112A','Manikantan','Conductor','15000','6','1026');
+INSERT into Staff values('526','119','Mani','Driver','15500','12','1027');
+INSERT into Staff values('527','125','Mutthu','Conductor','25000','26','1028');
+INSERT into Staff values('528','131','Mutthappa','Driver','20500','22','1029');
+INSERT into Staff values('529','140','Amarnath','Conductor','20500','21','1030');
+INSERT into Staff values('530','140E','Rai','Conductor','20000','17','1031');
+INSERT into Staff values('531','141','Sharan Prakash','Conductor','20000','18','1032');
+INSERT into Staff values('532','141K','Amarkanth','Driver','15000','14','1033');
+INSERT into Staff values('533','144','Ramesh','Conductor','20000','15','1034');
+INSERT into Staff values('534','144A','Darshan K','Conductor','15000','8','1009');
+
+INSERT into Staff values('535','146','Sharappa','Driver','25000','23','1035');
+INSERT into Staff values('536','146B','Ram','Conductor','25000','22','1036');
+INSERT into Staff values('537','161B','Ramesh','Driver','25000','22','1037');
+INSERT into Staff values('538','161D','Mahesh','Conductor','25000','21','1038');
+INSERT into Staff values('539','163C','Suresh','Driver','30000','26','1039');
+INSERT into Staff values('540','163F','Kumar','Conductor','30000','28','1040');
+INSERT into Staff values('541','165E','Chandhru','Driver','30000','29','1041');
+INSERT into Staff values('542','168A','Chandhrakanth','Conductor','30000','30','1042');
+INSERT into Staff values('543','171','Akbar','Driver','35000','31','1043');
+INSERT into Staff values('544','171F','Ismail','Conductor','35000','32','1044');
+INSERT into Staff values('545','176','Antony J','Driver','35000','33','1045');
+INSERT into Staff values('546','176A','Joseph','Conductor','20000','16','1046');
+INSERT into Staff values('547','195','Kanthkumar','Driver','20000','18','1047');
+INSERT into Staff values('548','201','vargueese','Conductor','30000','29','1048');
+INSERT into Staff values('549','201D','Aftab','Driver','25000','24','1049');
+INSERT into Staff values('550','201H','Kumar K','Conductor','30000','30','1050');
+INSERT into Staff values('551','210','Chandhrashekar K','Driver','20000','20','1051');
+INSERT into Staff values('552','210D','Chandhrakanth','Conductor','25000','22','1052');
+INSERT into Staff values('553','210FA','Shekhar','Driver','20000','16','1053');
+INSERT into Staff values('554','210N','kanthkumar L','Conductor','20000','15','1054');
+INSERT into Staff values('555','210P','Gopal','Driver','20000','18','1055');
+INSERT into Staff values('556','211','krishnakumar','Driver','20000','17','1056');
+INSERT into Staff values('557','211D','Darshan L','Conductor','15000','8','1057');
+
+INSERT into Staff values('558','211E','Gopalkrishna','Conductor','20000','16','1058');
+INSERT into Staff values('559','212','Chakravarthy','Driver','45000','42','1059');
+INSERT into Staff values('560','213A','kiran k','Conductor','45000','43','1060');
+INSERT into Staff values('561','214','Nandu','Driver','35000','34','1061');
+INSERT into Staff values('562','215','Arvind','Conductor','35000','33','1062');
+INSERT into Staff values('563','215D','Limbavali','Driver','30000','27','1063');
+INSERT into Staff values('564','216','Mahanthesh','Conductor','40000','37','1064');
+INSERT into Staff values('565','220B','Sharan K','Driver','30000','30','1065');
+INSERT into Staff values('566','221','Rakesh','Conductor','30000','26','1066');
+INSERT into Staff values('567','221E','Keshav','Driver','15000','10','1067');
+INSERT into Staff values('568','222','Kailash','Conductor','30000','29','1068');
+INSERT into Staff values('569','223A','Maheshappa K','Driver','20000','20','1069');
+INSERT into Staff values('570','225','Sureshappa','Conductor','20000','11','1070');
+INSERT into Staff values('571','226A','Rajesh','Driver','20000','11','1071');
+INSERT into Staff values('572','227','Rajeeva','Conductor','30000','32','1072');
+INSERT into Staff values('573','227A','Rana L','Driver','25000','23','1073');
+INSERT into Staff values('574','228','Ram Murthy','Conductor','20000','12','1074');
+INSERT into Staff values('575','228A','Akthar I','Driver','20000','10','1075');
+INSERT into Staff values('576','230','Iqbal','Conductor','20000','11','1076');
+INSERT into Staff values('577','231A','John','Driver','20000','12','1077');
+INSERT into Staff values('578','235A','Narine','Conductor','20000','13','1078');
+INSERT into Staff values('579','235F','Jeeva','Driver','20000','14','1079');
+INSERT into Staff values('580','238','Ekanth','Conductor','20000','15','1080');
+
+INSERT into Staff values('581','240','Amaresha','Driver','20000','16','1081');
+INSERT into Staff values('582','241','Malleshwari','Conductor','20000','17','1082');
+INSERT into Staff values('583','241A','Kiran J','Driver','20000','18','1083');
+INSERT into Staff values('584','242','Mahalakshmi','Conductor','20000','19','1084');
+INSERT into Staff values('585','243','Ramesh S','Driver','20000','20','1085');
+INSERT into Staff values('586','248','Jayalakshmi','Conductor','25000','21','1086');
+INSERT into Staff values('587','248B','Murthy','Driver','25000','22','1087');
+INSERT into Staff values('588','250','Sublakshmi','Conductor','25000','23','1088');
+INSERT into Staff values('589','250AC','Prakash','Driver','25000','24','1089');
+INSERT into Staff values('590','251','Kamala','Conductor','25000','25','1090');
+INSERT into Staff values('591','252','Lalith','Driver','25000','26','1091');
+INSERT into Staff values('592','252A','Darshan K','Conductor','15000','8','1092');
+INSERT into Staff values('593','252E','Lalitha','Conductor','26000','27','1093');
+INSERT into Staff values('594','253A','Anu S','Driver','26000','28','1094');
+INSERT into Staff values('595','255','Saritha','Conductor','25000','29','1095');
+INSERT into Staff values('596','258','Surya Kumar','Driver','30000','30','1096');
+INSERT into Staff values('597','263','Jaya','Conductor','30000','31','1097');
+INSERT into Staff values('598','263A','Suryanaryan','Driver','32000','32','1098');
+INSERT into Staff values('599','270','Shankramma','Conductor','30000','33','1099');
+INSERT into Staff values('600','270A','Lalith kumar','Driver','20505','34','1100');
+INSERT into Staff values('601','271','Savitha','Conductor','21500','35','1101');
+INSERT into Staff values('602','279A','Akhil','Driver','21000','36','1102');
+INSERT into Staff values('603','280A','Navya','Conductor','25000','37','1103');
+INSERT into Staff values('604','281A','AkhilRaj','Driver','20000','38','1104');
+INSERT into Staff values('605','281C','Ramya L','Conductor','25600','39','1105');
+INSERT into Staff values('606','286','KiranRaj','Driver','25000','40','1106');
+INSERT into Staff values('607','290','Mala','Conductor','28000','41','1107');
+INSERT into Staff values('608','295','Ramesh Surya','Driver','31000','42','1108');
+INSERT into Staff values('609','297A','Nithya Jyothi','Conductor','32000','43','1109');
+INSERT into Staff values('610','300','Nandu','Driver','35000','44','1110');
+INSERT into Staff values('611','300A','Arvind','Conductor','31000','45','1111');
+INSERT into Staff values('612','300B','Limbavali','Driver','33000','46','1112');
+INSERT into Staff values('613','301','Mahanthesh','Conductor','32000','47','1113');
+INSERT into Staff values('614','301A','Sharan K','Driver','35000','48','1114');
+INSERT into Staff values('615','301D','Rakesh','Conductor','40000','49','1115');
+INSERT into Staff values('616','306','Keshav','Driver','41000','50','1116');
+INSERT into Staff values('617','311','Kailash','Conductor','42000','51','1117');
+INSERT into Staff values('618','311C','Maheshappa K','Driver','45000','52','1118');
+INSERT into Staff values('619','313D','Sureshappa','Conductor','46000','53','1119');
+INSERT into Staff values('620','314B','Rajesh','Driver','39000','54','1120');
+INSERT into Staff values('621','315','Rajeeva','Conductor','32000','55','1121');
+INSERT into Staff values('622','323','Rana L','Driver','16500','56','1122');
+INSERT into Staff values('623','327A','Ram Murthy','Conductor','18000','57','1123');
+INSERT into Staff values('624','327C','Akthar I','Driver','19000','10','1124');
+INSERT into Staff values('625','328H','Iqbal','Conductor','20000','11','1125');
+INSERT into Staff values('626','330','John','Driver','20500','12','1126');
+INSERT into Staff values('627','335A','Narine','Conductor','21200','13','1127');
+INSERT into Staff values('628','340G','Jeeva','Driver','21500','14','1128');
+
+INSERT into Staff values('629','342','Amarkanth','Driver','20000','16','1129');
+INSERT into Staff values('630','342A','Ramesh','Conductor','20000','17','1130');
+INSERT into Staff values('631','342F','Sharappa','Driver','20000','18','1131');
+INSERT into Staff values('632','350D','Ram','Conductor','20000','19','1132');
+INSERT into Staff values('633','350G','Ramesh','Driver','20000','20','1133');
+INSERT into Staff values('634','360','Mahesh','Conductor','25000','21','1134');
+INSERT into Staff values('635','360K','Suresh','Driver','25000','22','1135');
+INSERT into Staff values('636','365','Kumar','Conductor','25000','23','1136');
+INSERT into Staff values('637','365H','Chandhru','Driver','258000','24','1137');
+INSERT into Staff values('638','375','Chandhrakanth','Conductor','','25','1138');
+INSERT into Staff values('639','375B','Akbar','Driver','30000','26','1139');
+INSERT into Staff values('640','375D','Ismail','Conductor','30000','27','1140');
+INSERT into Staff values('641','375E','Antony J','Driver','30000','28','1141');
+INSERT into Staff values('642','375F','Joseph','Conductor','30000','29','1142');
+INSERT into Staff values('643','375G','Kanthkumar','Driver','30000','30','1143');
+INSERT into Staff values('644','378','vargueese','Conductor','35000','31','1144');
+INSERT into Staff values('645','378A','Aftab','Driver','35000','32','1145');
+INSERT into Staff values('646','378D','Kumar K','Conductor','35000','33','1146');
+INSERT into Staff values('647','378F','Chandhrashekar K','Driver','25000','24','1147');
+INSERT into Staff values('648','378H','Chandhrakanth','Conductor','25000','25','1148');
+INSERT into Staff values('649','378M','Shekhar','Driver','30000','26','1149');
+INSERT into Staff values('650','390','Amar','Conductor','25000','24','1150');
+INSERT into Staff values('651','400A','Anirudh','Driver','25000','23','1151');
+INSERT into Staff values('652','401','Keshavraj','Conductor','30000','29','1152');
+INSERT into Staff values('653','401A','Keshavraj J','Conductor','30000','29','1153');
+INSERT into Staff values('654','401E','Dhanraj','Driver','20000','20','1154');
+INSERT into Staff values('655','401AF','Mohammed','Driver','30000','41','1155');
+INSERT into Staff values('656','402','Iqbal Abdulla','Conductor','35000','32','1156');
+INSERT into Staff values('657','402M','Yagnik','Driver','35000','33','1157');
+INSERT into Staff values('658','410','Shriraj J','Conductor','35000','34','1158');
+INSERT into Staff values('659','410F','Vinay L','Driver','35000','34','1159');
+INSERT into Staff values('660','410M','Darshan K','Conductor','35000','34','1160');
+INSERT into Staff values('661','411','Chakravarthy A','Driver','35000','33','1161');
+INSERT into Staff values('662','411D','Ashok','Conductor','25000','24','1162');
+INSERT into Staff values('663','500A','Shivraj','Driver','38000','39','1163');
+INSERT into Staff values('664','500B','Cariappa','Driver','20000','50','1164');
+INSERT into Staff values('665','500C','Balu','Driver','15000','1','1165');
+INSERT into Staff values('666','500D','BalKrishna','Conductor','15000','2','1166');
+INSERT into Staff values('667','500F','Ananthu','Driver','14500','3','1167');
+INSERT into Staff values('668','501A','Jayan','Conductor','15500','4','1168');
+INSERT into Staff values('669','501C','Mutthuraja','Driver','16000','5','1169');
+INSERT into Staff values('670','502','Shanthkumar','Conductor','15000','6','1170');
+INSERT into Staff values('671','502D','Keshavraj K ','Conductor','30000','29','1171');
+INSERT into Staff values('672','502F','Sirivardhan','Driver','15000','7','1172');
+INSERT into Staff values('673','502H','Girish','Conductor','25000','23','1173');
+INSERT into Staff values('674','600C','Nandu Prakash','Driver','25000','21','1174');
+INSERT into Staff values('675','600F','Munswami','Conductor','15000','10','1175');
+INSERT into Staff values('676','600G','Raja','Driver','15000','11','1176');
+INSERT into Staff values('677','AS-1','Muniraja','Driver','19000','18','1177');
+INSERT into Staff values('678','AS-7','Manikantan','Conductor','15000','13','1178');
+INSERT into Staff values('679','AS-10','Mani','Driver','20000','16','1179');
+INSERT into Staff values('680','D-6','Mutthu','Conductor','22000','25','1180');
+INSERT into Staff values('681','FDR1','Mutthappa','Driver','24000','24','1181');
+INSERT into Staff values('682','FDR2','Amarnath','Conductor','25000','23','1182');
+INSERT into Staff values('683','FDR7','Amaravathi','Conductor','25000','21','1183');
+INSERT into Staff values('684','K1','Amarkanth','Driver','25000','21','1184');
+INSERT into Staff values('685','K3','Sujatha L','Conductor','30000','26','1185');
+
+
+
+INSERT into Staff values('686','211E','Gopalkrishna','Conductor','20000','16','1186','20');
+INSERT into Staff values('687','212','Chakravarthy','Driver','45000','42','1187','20');
+INSERT into Staff values('688','213A','kiran k','Conductor','45000','43','1188','20');
+INSERT into Staff values('689','214','Nandu','Driver','35000','34','1189','20');
+INSERT into Staff values('690','215','Arvind','Conductor','35000','33','1190','20');
+INSERT into Staff values('691','215D','Limbavali','Driver','30000','27','1191','1');
+INSERT into Staff values('692,'216','Mahanthesh','Conductor','40000','37','1192','20');
+INSERT into Staff values('693','220B','Sharan K','Driver','30000','30','1193','1');
+INSERT into Staff values('694','221','Rakesh','Conductor','30000','26','1194','12');
+INSERT into Staff values('695','221E','Keshav','Driver','15000','10','1195','12');
+INSERT into Staff values('696','222','Kailash','Conductor','30000','29','1196','12');
+INSERT into Staff values('697','223A'Maheshappa K','Driver','20000','20','1197','2');
+INSERT into Staff values('698','225','Sureshappa','Conductor','20000','11','1198','21');
+INSERT into Staff values('699','226A','Rajesh','Driver','20000','11','1199','1');
+INSERT into Staff values('700','227','Rajeeva','Conductor','30000','32','1200','12');
+INSERT into Staff values('701','227A','Rana L','Driver','25000','23','1201','12');
+INSERT into Staff values('702','228','Ram Murthy','Conductor','20000','12','1202','12');
+INSERT into Staff values('703','228A','Akthar I','Driver','20000','10','1203','12');
+INSERT into Staff values('704','230','Iqbal','Conductor','20000','11','1204','12');
+INSERT into Staff values('705','231A','John','Driver','20000','12','1205','12');
+INSERT into Staff values('706','235A','Narine','Conductor','20000','13','1206','16');
+INSERT into Staff values('707','235F','Jeeva','Driver','20000','14','1207','1');
+INSERT into Staff values('708','238','Ekanth','Conductor','20000','15','1208','1');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

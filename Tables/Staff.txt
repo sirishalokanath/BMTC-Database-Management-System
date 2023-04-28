@@ -1,0 +1,566 @@
+create table Staff
+(
+	route_id int references Route(route_id) on delete cascade,
+	staff_id int,
+	designition char(20),
+	staff_name char(30),
+	qf char(20),
+	salary int,
+	exp varchar(30),
+);
+
+insert into Staff values
+('1',1000,1,'Driver','Manju','PUC','1000','3 yrs');
+
+insert into Staff values
+('1E',1001,3,'Driver',);
+
+insert into Staff values
+('2A',1002,5,'Driver',);
+
+
+insert into Staff values
+('3F',1004,7,'Driver',);
+
+insert into Staff values
+('13',1005,9,'Driver',);
+
+insert into Staff values
+('13F',1006,11,'Driver',);
+
+insert into Staff values
+('15A',1007,13,'Driver',);
+
+insert into Staff values
+('15E',1008,15,'Driver',);
+
+insert into Staff values
+('25',1009,17,'Driver',);
+
+insert into Staff values
+('60A',1010,19,'Driver',);
+
+insert into Staff values
+('61',1011,21,'Driver',);
+
+insert into Staff values
+('75B',1012,23,'Driver',);
+
+insert into Staff values
+('75D',1013,25,'Driver',);
+
+insert into Staff values
+('77',1014,27,'Driver',);
+
+insert into Staff values
+('80',1015,29,'Driver',);
+
+insert into Staff values
+('82',1016,31,'Driver',);
+
+insert into Staff values
+('87',1017,33,'Driver',);
+
+insert into Staff values
+('89',1018,35,'Driver',);
+
+insert into Staff values
+('96A',1019,37,'Driver',);
+
+insert into Staff values
+('96C',1020,39,'Driver',);
+
+insert into Staff values
+('99A',1021,41,'Driver',);
+
+insert into Staff values
+('100',1022,43,'Driver',);
+
+insert into Staff values
+('111',1023,45,'Driver',);
+
+insert into Staff values
+('111C',1024,47,'Driver',);
+
+insert into Staff values
+('112A',1025,49,'Driver',);
+
+insert into Staff values
+('119',1025,51,'Driver',);
+
+insert into Staff values
+('125',1026,53,'Driver',);
+
+insert into Staff values
+('131',1027,55,'Driver',);
+
+insert into Staff values
+('140',1028,57,);
+
+insert into Staff values
+('140E',1029,59,'Driver',);
+
+insert into Staff values
+('141',1030,61,'Driver',);
+
+insert into Staff values
+('141K',1031,63,'Driver',);
+
+insert into Staff values
+('144',1032,65,'Driver',);
+
+insert into Staff values
+('144A',1033,67,'Driver',);
+
+insert into Staff values
+('146',1034,69,'Driver',);
+
+insert into Staff values
+('146B',1035,71,'Driver',);
+
+insert into Staff values
+('161B',1036,73,'Driver',);
+
+insert into Staff values
+('161D',1037,75,'Driver',);
+
+insert into Staff values
+('163C',1038,77,'Driver',);
+
+insert into Staff values
+('163F',1039,79,'Driver',);
+
+insert into Staff values
+('165E',1040,81,'Driver',);
+
+insert into Staff values
+('168A',1041,83,'Driver',);
+
+insert into Staff values
+('171',1042,85,'Driver',);
+
+insert into Staff values
+('171F',1043,87,'Driver',);
+
+insert into Staff values
+('176',1044,89,'Driver',);
+
+insert into Staff values
+('176A',1045,91,'Driver',);
+
+insert into Staff values
+('195',1046,93,'Driver',);
+
+insert into Staff values
+('201',1047,95,'Driver',);
+
+insert into Staff values
+('201D',1048,97,'Driver',);
+
+insert into Staff values
+('201H',1049,99,'Driver',);
+
+insert into Staff values
+('210',1050,101,'Driver',);
+
+insert into Staff values
+('210D',1051,103,'Driver',);
+
+insert into Staff values
+('210FA',1052,105,'Driver',);
+
+insert into Staff values
+('210N',1053,107,'Driver',);
+
+insert into Staff values
+('210P',1054,109,'Driver',);
+
+insert into Staff values
+('211',1055,111,'Driver',);
+
+insert into Staff values
+('211D',1056,113,'Driver',);
+
+insert into Staff values
+('211E',1057,115,'Driver',);
+
+insert into Staff values
+('212',1058,117,'Driver',);
+
+insert into Staff values
+('213A',1059,119,'Driver',);
+
+insert into Staff values
+('214',1060,121,'Driver',);
+
+insert into Staff values
+('215',1061,123,'Driver',);
+
+insert into Staff values
+('215D',1062,125,'Driver',);
+
+insert into Staff values
+('216',1063,127,'Driver',);
+
+insert into Staff values
+('220B',1064,129,'Driver',);
+
+insert into Staff values
+('221',1065,131,'Driver',);
+
+insert into Staff values
+('221E',1066,133,'Driver',);
+
+insert into Staff values
+('222',1067,135,'Driver',);
+
+insert into Staff values
+('223A',1068,137,'Driver',);
+
+insert into Staff values
+('225',1069,139,'Driver',);
+
+insert into Staff values
+('226A',1070,141,'Driver',);
+
+insert into Staff values
+('227',1071,143,'Driver',);
+
+insert into Staff values
+('227A','1072,145,'Driver',);
+
+insert into Staff values
+('228',1073,147,'Driver',);
+
+insert into Staff values
+('228A',1074,149,'Driver',);
+
+insert into Staff values
+('230',1075,151,'Driver',);
+
+insert into Staff values
+('231A',1076,153,'Driver',);
+
+insert into Staff values
+('235A',1077,155,'Driver',);
+
+insert into Staff values
+('235F',1078,157,'Driver',);
+
+insert into Staff values
+('238',1079,159,'Driver',);
+
+insert into Staff values
+('240',1080,161,'Driver',);
+
+insert into Staff values
+('241',1081,163,'Driver',);
+
+insert into Staff values
+('241A',1082,165,'Driver',);
+
+insert into Staff values
+('242',1083,167,'Driver',);
+
+insert into Staff values
+('243',1084,169,'Driver',)
+
+insert into Staff values
+('248',1085,171,'Driver',);
+
+insert into Staff values
+('248B',1086,173,'Driver',);
+
+insert into Staff values
+('250',1087,175,'Driver',);
+
+insert into Staff values
+('250AC',1088,177,'Driver',);
+
+insert into Staff values
+('251',1089,179,'Driver',);
+
+insert into Staff values
+('252',1090,181,'Driver',);
+
+insert into Staff values
+('252A',1091,183,'Driver',);
+
+insert into Staff values
+('252E',1092,185,'Driver',);
+
+insert into Staff values
+('253A',1093,187,'Driver',);
+
+insert into Staff values
+('255',1096,189,'Driver',);
+
+insert into Staff values
+('258',1097,191,'Driver',);
+
+insert into Staff values
+('263',1098,193,'Driver',);
+
+insert into Staff values
+('263A',1099,195,'Driver',);
+
+insert into Staff values
+('270',1100,197,'Driver',);
+
+insert into Staff values
+('270A',1101,199,'Driver',);
+
+insert into Staff values
+('271',1102,201,'Driver',);
+
+insert into Staff values
+('279A',1103,203,'Driver',);
+
+insert into Staff values
+('280A',1104,205,'Driver',);
+
+insert into Staff values
+('281A',1105,207,'Driver',);
+
+insert into Staff values
+('281C',1106,209,'Driver',);
+
+insert into Staff values
+('286',1107,211,'Driver',);
+
+insert into Staff values
+('290',1108,213,'Driver',);
+
+insert into Staff values
+('295',1109,215,'Driver',);
+
+insert into Staff values
+('297A',1110,217,'Driver',);
+
+insert into Staff values
+('300',1111,219,'Driver',);
+
+insert into Staff values
+('300A',1112,221,'Driver',);
+
+insert into Staff values
+('300B',1113,223,'Driver',);
+
+insert into Staff values
+('301',1114,225,'Driver',);
+
+insert into Staff values
+('301A',1114,227,'Driver',);
+
+insert into Staff values
+('301D',1115,229,'Driver',);
+
+insert into Staff values
+('306',1116,231,'Driver',);
+
+insert into Staff values
+('311',1117,233,'Driver',);
+
+insert into Staff values
+('311C',1118,235,'Driver',);
+
+insert into Staff values
+('313D',1119,237,'Driver',);
+
+insert into Staff values
+('314B',1120,239,'Driver',);
+
+insert into Staff values
+('315',1121,241,'Driver',);
+
+insert into Staff values
+('323',1122,243,'Driver',);
+
+insert into Staff values
+('327A',1123,245,'Driver',);
+
+insert into Staff values
+('327C',1124,247,'Driver',);
+
+insert into Staff values
+('328H',1125,249,'Driver',);
+
+insert into Staff values
+('330',1126,251,'Driver',);
+
+insert into Staff values
+('335A',1127,253,'Driver',);
+
+insert into Staff values
+('340G',1128,255,'Driver',);
+
+insert into Staff values
+('342',1129,257,'Driver',);
+
+insert into Staff values
+('342A',1130,259,'Driver',);
+
+insert into Staff values
+('342F',1131,261,'Driver',);
+
+insert into Staff values
+('350D',1132,263,'Driver',);
+
+insert into Staff values
+('350G',1133,265,'Driver',);
+
+insert into Staff values
+('360',1134,267,'Driver',);
+
+insert into Staff values
+('360K',1135,269,'Driver',);
+
+insert into Staff values
+('365',1136,271,'Driver',);
+
+insert into Staff values
+('365H',1137,273,'Driver',);
+
+insert into Staff values
+('375',1138,275,'Driver',);
+
+insert into Staff values
+('375B',1139,277,'Driver',);
+
+insert into Staff values
+('375D',1140,279,'Driver',);
+
+insert into Staff values
+('375E',1141,281,'Driver',);
+
+insert into Staff values
+('375F',1142,283,'Driver',);
+
+insert into Staff values
+('375G',1143,285,'Driver',);
+
+insert into Staff values
+('378',1144,287,'Driver',);
+
+insert into Staff values
+('378A',1145,289,'Driver',);
+
+insert into Staff values
+('378D',1146,291,'Driver',);
+
+insert into Staff values
+('378F',1147,293,'Driver',);
+
+insert into Staff values
+('378H',1148,295,'Driver',);
+
+insert into Staff values
+('378M',1149,297,'Driver',);
+
+insert into Staff values
+('390',1150,299,'Driver',);
+
+insert into Staff values
+('400A',1151,301,'Driver',);
+
+insert into Staff values
+('401',1152,303,'Driver',);
+
+insert into Staff values
+('401A',1153,305,'Driver',);
+
+insert into Staff values
+('401E',1154,307,'Driver',);
+
+insert into Staff values
+('401AF',1155,309,'Driver',);
+
+insert into Staff values
+('402',1156,311,'Driver',);
+
+insert into Staff values
+('402M',1157,313,'Driver',);
+
+insert into Staff values
+('410',1158,315,'Driver',);
+
+insert into Staff values
+('410F',1159,317,'Driver',);
+
+insert into Staff values
+('410M',1160,319,'Driver',);
+
+insert into Staff values
+('411',1161,321,'Driver',);
+
+insert into Staff values
+('411D',1162,323,'Driver',);
+
+insert into Staff values
+('500A',1163,325,'Driver',);
+
+insert into Staff values
+('500B',1164,327,'Driver',);
+
+insert into Staff values
+('500C',1165,329,'Driver',);
+
+insert into Staff values
+('500D',1166,331,'Driver',);
+
+insert into Staff values
+('500F',1167,333,'Driver',);
+
+insert into Staff values
+('501A',1168,335,'Driver',);
+
+insert into Staff values
+('501C',1169,337,'Driver',);
+
+insert into Staff values
+('502',1170,339,'Driver',);
+
+insert into Staff values
+('502D',1171,341,'Driver',);
+
+insert into Staff values
+('502F',1172,343,'Driver',);
+
+insert into Staff values
+('502H',1173,345,'Driver',);
+
+insert into Staff values
+('600C',1174,347,'Driver',);
+
+insert into Staff values
+('600F',1175,349,'Driver',);
+
+insert into Staff values
+('600G',1176,351,'Driver',);
+
+insert into Staff values
+('AS-1',1177,353,'Driver',);
+
+insert into Staff values
+('AS-7',1178,355,'Driver',);
+
+insert into Staff values
+('AS-10',1179,357,'Driver',);
+
+insert into Staff values
+('D-6',1180,359,'Driver',);
+
+insert into Staff values
+('FDR1',1181,361,'Driver',);
+
+insert into Staff values
+('FDR2',1182,363,'Driver',);
+
+insert into Staff values
+('FDR7',1181,365,'Driver',);
+
+insert into Staff values
+('K1',1182,367,'Driver',);
+
+insert into Staff values
+('K3',1183,369,'Driver',);

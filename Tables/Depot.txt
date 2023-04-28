@@ -1,0 +1,566 @@
+create table Depot
+(
+	bus_no varchar(30) references Bus(bus_no) on delete cascade,
+	Depot_no int primary key,
+	Depot_name varchar(30)
+);
+
+insert into Depot values
+('1',8,'Yeshwanthpur');
+
+insert into Depot values
+('1E',8,'Yeshwanthpur');
+
+insert into Depot values     
+('2A',4,'Jayanagar');
+
+
+insert into Depot values
+('3F',4,'Jayanagar');
+
+insert into Depot values
+('13',4,'Jayanagar');
+
+insert into Depot values
+('13F',4,'Jayanagar');
+
+insert into Depot values
+('15A',20,'Banashankari');
+
+insert into Depot values
+('15E',20,'Banashankari');
+
+insert into Depot values
+('25',4,'Jayanagar');
+
+insert into Depot values
+('60A',4,'Jayanagar');
+
+insert into Depot values
+('61',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('75B',,'');
+
+insert into Depot values
+('75D',8,'Yeshwanthpur');
+
+insert into Depot values
+('77',');
+
+insert into Depot values
+('80',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('82',8,'Yeshwanthpur');
+
+insert into Depot values
+('87',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('89',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('96A',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('96C',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('99A',8,'Yeshwanthpur');
+
+insert into Depot values
+('100',8,'Yeshwanthpur');
+
+insert into Depot values
+('111',14,'R T Nagar');
+
+insert into Depot values
+('111C',14,'R T Nagar');
+
+insert into Depot values
+('112A',14,'R T Nagar');
+
+insert into Depot values
+('119',2,'Shivajinagar');
+
+insert into Depot values
+('125',2,'Shivajinagar');
+
+insert into Depot values
+('131',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('140',');
+
+insert into Depot values
+('140E',,'');
+
+insert into Depot values
+('141',2,'Shivajinagar'');
+
+insert into Depot values
+('141K',2,'Shivajinagar');
+
+insert into Depot values
+('144',2',Shivajinagar');
+
+insert into Depot values
+('144A',2',Shivajinagar');
+
+insert into Depot values
+('146',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('146B',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('161B',2',Shivajinagar');
+
+insert into Depot values
+('161D',2',Shivajinagar');
+
+insert into Depot values
+('163C',');
+
+insert into Depot values
+('163F',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('165E',3,'Shanti Nagar');
+
+insert into Depot values
+('168A',);
+
+insert into Depot values
+('171',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('171F','2,'Shanti Nagar');
+
+insert into Depot values
+('176',14,'R T Nagar');
+
+insert into Depot values
+('176A',14,'R T Nagar');
+
+insert into Depot values
+('195',2,'Shivajinagar');
+
+insert into Depot values
+('201',13,'Katterguppe');
+
+insert into Depot values
+('201D',15,'Koramangala');
+
+insert into Depot values
+('201H',15,'Koramangala');
+
+insert into Depot values
+('210',33,'Poorna Pragna Layout');
+
+insert into Depot values
+('210D',20,'Banashankari');
+
+insert into Depot values
+('210FA'33,'Poorna Pragna Layout');
+
+insert into Depot values
+('210N',33,'Poorna Pragna Layout');
+
+insert into Depot values
+('210P',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('211',20,'Banashankari');
+
+insert into Depot values
+('211D',20,'Banashankari');
+
+insert into Depot values
+('211E',20,'Banashankari');
+
+insert into Depot values
+('212',20,'Banashankari');
+
+insert into Depot values
+('213A',20,'Banashankari');
+
+insert into Depot values
+('214',20,'Banashankari');
+
+insert into Depot values
+('215',20,'Banashankari');
+
+insert into Depot values
+('215D',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('216',20,'Banashankari');
+
+insert into Depot values
+('220B',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('221',12,'Kengeri');
+
+insert into Depot values
+('221E',12,'Kengeri');
+
+insert into Depot values
+('222',12,'Kengeri');
+
+insert into Depot values
+('223A',2,'Shivajinagar');
+
+insert into Depot values
+('225',21,'Rajarajeshwarinagar');
+
+insert into Depot values
+('226A',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('227',12,'Kengeri'');
+
+insert into Depot values
+('227A',12,'Kengeri'');
+
+insert into Depot values
+('228',12,'Kengeri');
+
+insert into Depot values
+('228A',12,'Kengeri');
+
+insert into Depot values
+('230',12,'Kengeri');
+
+insert into Depot values
+('231A',12,'Kengeri');
+
+insert into Depot values
+('235A',16,'Deepanjalinagar');
+
+insert into Depot values
+('235F','1,'Kempegowda Bus Station');
+
+insert into Depot values
+('238',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('240',');
+
+insert into Depot values
+('241',');
+
+insert into Depot values
+('241A',');
+
+insert into Depot values
+('242',,'');
+
+insert into Depot values
+('243',,'')
+
+insert into Depot values
+('248',16,'Deepanjalinagar');
+
+insert into Depot values
+('248B',9,'Peenya');
+
+insert into Depot values
+('250',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('250AC',8,'Yeshwanthpur');
+
+insert into Depot values
+('251',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('252',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('252A',2,'Shivajinagar');
+
+insert into Depot values
+('252E',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('253A',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('255',8,'Yeshwanthpur');
+
+insert into Depot values
+('258',8,'Yeshwanthpur');
+
+insert into Depot values
+('263',8,'Yeshwanthpur');
+
+insert into Depot values
+('263A',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('270',2,'Shivajinagar');
+
+insert into Depot values
+('270A',2,'Shivajinagar');
+
+insert into Depot values
+('271',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('279A',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('280A',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('281A',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('281C',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('286',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('290',2,'Shivajinagar');
+
+insert into Depot values
+('295',10,'Hennur');
+
+insert into Depot values
+('297A',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('300',2,'Shivajinagar');
+
+insert into Depot values
+('300A',');
+
+insert into Depot values
+('300B',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('301',');
+
+insert into Depot values
+('301A',2,'Shivajinagar');
+
+insert into Depot values
+('301D',2,'Shivajinagar');
+
+insert into Depot values
+('306',6,'Indiranagar');
+
+insert into Depot values
+('311',2,'Shivajinagar');
+
+insert into Depot values
+('311C',2,'Shivajinagar');
+
+insert into Depot values
+('313D',24,'K R Puram');
+
+insert into Depot values
+('314B',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('315',24,'K R Puram');
+
+insert into Depot values
+('323',41,'Gunjur');
+
+insert into Depot values
+('327A',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('327C',41',Gunjur');
+
+insert into Depot values
+('328H',39,'Hoskote');
+
+insert into Depot values
+('330',2,'Shivajinagar');
+
+insert into Depot values
+('335A',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('340G',25,'H S R Layout');
+
+insert into Depot values
+('342',42,'Kodathi');
+
+insert into Depot values
+('342A',42,'Kodathi');
+
+insert into Depot values
+('342F',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('350D',19,'Electronic City');
+
+insert into Depot values
+('350G',19,'Electronic City');
+
+insert into Depot values
+('360',19,'Electronic City');
+
+insert into Depot values
+('360K',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('365',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('365H',27,'Jigani');
+
+insert into Depot values
+('375',12,'Kengeri');
+
+insert into Depot values
+('375B',12,'Kengeri');
+
+insert into Depot values
+('375D',20,'Banashankari');
+
+insert into Depot values
+('375E',12,'Kengeri');
+
+insert into Depot values
+('375F',12,'Kengeri');
+
+insert into Depot values
+('375G',20,'Banashankari');
+
+insert into Depot values
+('378',12,'Kengeri');
+
+insert into Depot values
+('378A',12,'Kengeri');
+
+insert into Depot values
+('378D',12,'Kengeri');
+
+insert into Depot values
+('378F',20,'Banashankari');
+
+insert into Depot values
+('378H',19,'Electronic City');
+
+insert into Depot values
+('378M',19,'Electronic City');
+
+insert into Depot values
+('390',39,'Hoskote');
+
+insert into Depot values
+('400A',24,'K R Puram');
+
+insert into Depot values
+('401',8,'Yeshwanthpur');
+
+insert into Depot values
+('401A',30,'Yelahanka');
+
+insert into Depot values
+('401E',30,'Yelahanka');
+
+insert into Depot values
+('401AF',12,'Kengeri');
+
+insert into Depot values
+('402',1,'Kempegowda Bus Station');
+
+insert into Depot values
+('402M',21,'Rajarajeshwarinagar');
+
+insert into Depot values
+('410',22,'Peenya');
+
+insert into Depot values
+('410F',4,'Jayanagar');
+
+insert into Depot values
+('410M',20,'Banashankari');
+
+insert into Depot values
+('411',20,'Banashankari');
+
+insert into Depot values
+('411D',19,'Electronic City');
+
+insert into Depot values
+('500A',20,'Banashankari');
+
+insert into Depot values
+('500B',8,'Yeshwanthpur');
+
+insert into Depot values
+('500C',24,'K R Puram');
+
+insert into Depot values
+('500D',25,'H S R Layout');
+
+insert into Depot values
+('500F',25,'H S R Layout');
+
+insert into Depot values
+('501A',20,'Banashankari');
+
+insert into Depot values
+('501C',12,'Kengeri');
+
+insert into Depot values
+('502',12,'Kengeri');
+
+insert into Depot values
+('502D',12,'Kengeri');
+
+insert into Depot values
+('502F',12,'Kengeri');
+
+insert into Depot values
+('502H',12,'Kengeri');
+
+insert into Depot values
+('600C',20,'Banashankari');
+
+insert into Depot values
+('600F',20,'Banashankari');
+
+insert into Depot values
+('600G',20,'Banashankari');
+
+insert into Depot values
+('AS-1',20,'Banashankari');
+
+insert into Depot values
+('AS-7',22,'Peenya');
+
+insert into Depot values
+('AS-10',27,'Jigani');
+
+insert into Depot values
+('D-6',12,'Kengeri');
+
+insert into Depot values
+('FDR1',4,'Jayanagar');
+
+insert into Depot values
+('FDR2',4,'Jayanagar');
+
+insert into Depot values
+('FDR7',20,'Banashankari');
+
+insert into Depot values
+('K1',8,'Yeshwanthpur');
+
+insert into Depot values
+('K3',15,'Koramangala');
+
+
+Bus nos without depot no and name
+75b,77,140,140e,163c,168a,240,241,242,243,300A,301
