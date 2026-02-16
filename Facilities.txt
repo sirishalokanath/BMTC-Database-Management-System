@@ -1,0 +1,562 @@
+Create table Facilities
+(
+	bus_no varchar(30) references Bus(bus_no) on delete cascade,
+	adult_fare int,
+	child_fare int,
+	passes int
+);
+
+insert into Facilities values
+('1',1000,23,12,70);
+
+insert into Facilities values
+('1E',1001,12,24,70);
+
+insert into Facilities values
+('2A',1002,12,24,70);
+
+
+insert into Facilities values
+('3F',1003,22,11,70);
+
+insert into Facilities values
+('13',1004,19,10,70);
+
+insert into Facilities values
+('13F',1005,21,11,70,);
+
+insert into Facilities values
+('15A',1006,19,10,70);
+
+insert into Facilities values
+('15E',1007,21,11,70);
+
+insert into Facilities values
+('25',1008,20,10,70);
+
+insert into Facilities values
+('60A',1009,21,11,70);
+
+insert into Facilities values
+('61',1010,21,11,70);
+
+insert into Facilities values
+('75B',1011,19,10,70);
+
+insert into Facilities values
+('75D',1012,24,12,70);
+
+insert into Facilities values
+('77',1013,24,12,70);
+
+insert into Facilities values
+('80',1014,14,7,70);
+
+insert into Facilities values
+('82',1015,20,10,70);
+
+insert into Facilities values
+('87',1016,17,9,70);
+insert into Facilities values
+('89',1017,19,10,70);
+
+insert into Facilities values
+('96A',1018,20,10,70);
+
+insert into Facilities values
+('96C',1019,19,10,70);
+
+insert into Facilities values
+('99A',1020,19,10,70);
+
+insert into Facilities values
+('100',1021,19,10,70);
+
+insert into Facilities values
+('111',1022,21,11,70);
+
+insert into Facilities values
+('111C',1023,19,10,70);
+
+insert into Facilities values
+('112A',1024,17,9,70);
+
+insert into Facilities values
+('119',1025,17,9,70);
+
+insert into Facilities values
+('125',1026,19,10,70);
+
+insert into Facilities values
+('131',1027,20,10,70);
+
+insert into Facilities values
+('140',1028,14,7,70);
+
+insert into Facilities values
+('140E',1029,19,10,70);
+
+insert into Facilities values
+('141',1030,14,7,70);
+
+insert into Facilities values
+('141K',1031,20,10,70);
+
+insert into Facilities values
+('144',1032,14,7,70);
+
+insert into Facilities values
+('144A',1033,14,7,70);
+
+insert into Facilities values
+('146',1034,17,9,70);
+
+insert into Facilities values
+('146B',1035,19,10,70);
+
+insert into Facilities values
+('161B',1036,17,9,70);
+
+insert into Facilities values
+('161D',1037,19,10,70);
+
+insert into Facilities values
+('163C',1038,17,9,70);
+
+insert into Facilities values
+('163F',1039,19,10,70);
+
+insert into Facilities values
+('165E',1040,19,10,70);
+
+insert into Facilities values
+('168A',1041,19,10,70);
+
+insert into Facilities values
+('171',1042,21,11,70);
+
+insert into Facilities values
+('171F',1043,21,11,70);
+
+insert into Facilities values
+('176',1044,22,11,70);
+
+insert into Facilities values
+('176A',1045,23,12,70);
+
+insert into Facilities values
+('195',1046,21,11,70);
+
+insert into Facilities values
+('201',1047,26,13,70);
+
+insert into Facilities values
+('201D',1048,19,10,70);
+
+insert into Facilities values
+('201H',1049,23,12,70);
+
+insert into Facilities values
+('210',1050,21,11,70);
+
+insert into Facilities values
+('210D',1051,20,10,70);
+
+insert into Facilities values
+('210FA',1052,23,12,70);
+
+insert into Facilities values
+('210N',1053,22,11,70);
+
+insert into Facilities values
+('210P',1054,23,12,70);
+
+insert into Facilities values
+('211',1055,25,13,70);
+
+insert into Facilities values
+('211D',1056,25,13,70);
+
+insert into Facilities values
+('211E',1057,25,13,70);
+
+insert into Facilities values
+('212',1058,23,12,70);
+
+insert into Facilities values
+('213A',1059,25,13,70);
+
+insert into Facilities values
+('214',1060,25,13,70);
+
+insert into Facilities values
+('215',1061,19,10,70);
+
+insert into Facilities values
+('215D',1062,22,11,70);
+
+insert into Facilities values
+('216',1063,25,13,70);
+
+insert into Facilities values
+('220B',1064,21,11,70);
+
+insert into Facilities values
+('221',1065,24,12,70);
+
+insert into Facilities values
+('221E',1066,23,12,70);
+
+insert into Facilities values
+('222',1067,21,11,70);
+
+insert into Facilities values
+('223A',1068,23,12,70);
+
+insert into Facilities values
+('225',1069,20,10,70);
+
+insert into Facilities values
+('226A',1070,24,12,70);
+
+insert into Facilities values
+('227',1071,23,12,70);
+
+insert into Facilities values
+('227A','1072,25,13,70);
+
+insert into Facilities values
+('228',1073,24,12,70);
+
+insert into Facilities values
+('228A',1074,25,13,70);
+
+insert into Facilities values
+('230',1075,23,12,70);
+
+insert into Facilities values
+('231A',1076,25,13,70);
+
+insert into Facilities values
+('235A',1077,20,10,70);
+
+insert into Facilities values
+('235F',1078,23,12,70);
+
+insert into Facilities values
+('238',1079,23,12,70);
+
+insert into Facilities values
+('240',1080,22,11,70);
+
+insert into Facilities values
+('241',1081,22,11,70);
+
+insert into Facilities values
+('241A',1082,24,12,70);
+
+insert into Facilities values
+('242',1083,23,12,70);
+
+insert into Facilities values
+('243',1084,27,14,70);
+
+insert into Facilities values
+('248',1085,25,13,70);
+
+insert into Facilities values
+('248B',1086,27,14,70);
+
+insert into Facilities values
+('250',1087,29,15,70);
+
+insert into Facilities values
+('250AC',1088,23,12,70);
+
+insert into Facilities values
+('251',1089,22,11,70);
+
+insert into Facilities values
+('252',1090,26,13,70);
+
+insert into Facilities values
+('252A',1091,21,11,70);
+
+insert into Facilities values
+('252E',1092,21,11,70);
+
+insert into Facilities values
+('253A',1093,25,13,70);
+
+insert into Facilities values
+('255',1094,24,12,70);
+
+insert into Facilities values
+('258',1095,25,13,70);
+
+insert into Facilities values
+('263',1096,21,11,70);
+
+insert into Facilities values
+('263A',1097,25,13,70);
+
+insert into Facilities values
+('270',1098,21,11,70);
+
+insert into Facilities values
+('270A',1099,24,12,70);
+
+insert into Facilities values
+('271',1100,23,12,70);
+
+insert into Facilities values
+('279A',1101,19,10,70);
+
+insert into Facilities values
+('280A',1102,25,13,70);
+
+insert into Facilities values
+('281A',1103,26,13,70);
+
+insert into Facilities values
+('281C',1104,23,12,70);
+
+insert into Facilities values
+('286',1105,19,10,70);
+
+insert into Facilities values
+('290',1106,19,10,70);
+
+insert into Facilities values
+('295',1107,23,12,70);
+
+insert into Facilities values
+('297A',1108,29,15,70);
+
+insert into Facilities values
+('300',1109,19,10,70);
+
+insert into Facilities values
+('300A',1110,23,12,70);
+
+insert into Facilities values
+('300B',1111,19,10,70);
+
+insert into Facilities values
+('301',1112,24,12,70)
+
+insert into Facilities values
+('301A',1113,21,11,70)
+
+insert into Facilities values
+('301D',1114,25,13,70);
+
+insert into Facilities values
+('306',1115,25,13,70);
+
+insert into Facilities values
+('311',1116,20,10,70);
+
+insert into Facilities values
+('311C',1117,20,10,70);
+
+insert into Facilities values
+('313D',1118,22,11,70);
+
+insert into Facilities values
+('314B',1119,22,11,70);
+
+insert into Facilities values
+('315',1120,22,11,70);
+
+insert into Facilities values
+('323',1121,27,14,70);
+
+insert into Facilities values
+('327A',1122,25,13,70);
+
+insert into Facilities values
+('327C',1123,29,15,70);
+
+insert into Facilities values
+('328H',1124,25,13,70);
+
+insert into Facilities values
+('330',1125,21,11,70);
+
+insert into Facilities values
+('335A',1126,25,13,70);
+
+insert into Facilities values
+('340G',1127,23,12,70);
+
+insert into Facilities values
+('342',1128,24,12,70);
+
+insert into Facilities values
+('342A',1129,25,13,70);
+
+insert into Facilities values
+('342F',1130,25,13,70);
+
+insert into Facilities values
+('350D',1131,25,13,70);
+
+insert into Facilities values
+('350G',1132,25,13,70);
+
+insert into Facilities values
+('360',1133,26,13,70);
+
+insert into Facilities values
+('360K',1134,27,14,70);
+
+insert into Facilities values
+('365',1135,24,12,70);
+
+insert into Facilities values
+('365H',1136,25,13,70);
+
+insert into Facilities values
+('375',1137,22,11,70);
+
+insert into Facilities values
+('375B',1138,25,13,70);
+
+insert into Facilities values
+('375D',1139,19,10,70);
+
+insert into Facilities values
+('375E',1140,22,11,70);
+
+insert into Facilities values
+('375F',1141,23,12,70);
+
+insert into Facilities values
+('375G',1142,25,13,70);
+
+insert into Facilities values
+('378',1143,25,13,70);
+
+insert into Facilities values
+('378A',1144,25,13,70);
+
+insert into Facilities values
+('378D',1145,25,13,70);
+
+insert into Facilities values
+('378F',1146,25,13,70);
+
+insert into Facilities values
+('378H',1147,25,13,70);
+
+insert into Facilities values
+('378M',1148,25,13,70);
+
+insert into Facilities values
+('390',1149,25,13,70);
+
+insert into Facilities values
+('400A',1150,19,10,70);
+
+insert into Facilities values
+('401',1151,23,12,70);
+
+insert into Facilities values
+('401A',1152,23,12,70);
+
+insert into Facilities values
+('401E',1153,25,13,70);
+
+insert into Facilities values
+('401AF',1154,26,13,70);
+
+insert into Facilities values
+('402',1155,24,12,70);
+
+insert into Facilities values
+('402M',1156,24,12,70);
+
+insert into Facilities values
+('410',1157,25,13,70);
+
+insert into Facilities values
+('410F',1158,24,12,70);
+
+insert into Facilities values
+('410M',1159,24,12,70);
+
+insert into Facilities values
+('411',1160,23,12,70);
+
+insert into Facilities values
+('411D',1161,25,13,70);
+
+insert into Facilities values
+('500A',1162,25,13,70);
+
+insert into Facilities values
+('500B',1163,29,15,70);
+
+insert into Facilities values
+('500C',1164,23,12,70);
+
+insert into Facilities values
+('500D',1165,25,13,70);
+
+insert into Facilities values
+('500F',1166,25,13,70);
+
+insert into Facilities values
+('501A',1167,25,13,70);
+
+insert into Facilities values
+('501C',1168,23,12,70);
+
+insert into Facilities values
+('502',1169,30,15,70);
+
+insert into Facilities values
+('502D',1170,27,14,70);
+
+insert into Facilities values
+('502F',1171,22,11,70);
+
+insert into Facilities values
+('502H',1172,24,12,70);
+
+insert into Facilities values
+('600C',1173,23,12,70);
+
+insert into Facilities values
+('600F',1174,25,13,70);
+
+insert into Facilities values
+('600G',1175,25,13,70);
+
+insert into Facilities values
+('AS-1',1176,10,5,70);
+
+insert into Facilities values
+('AS-7',1177,10,5,70);
+
+insert into Facilities values
+('AS-10',1178,9,5,70);
+
+insert into Facilities values
+('D-6',1179,29,15,70);
+
+insert into Facilities values
+('FDR1',1180,23,12,70);
+
+insert into Facilities values
+('FDR2',1181,23,12,70);
+
+insert into Facilities values
+('FDR7',1182,21,11,70);
+
+insert into Facilities values
+('K1',1183,25,13,70);
+
+insert into Facilities values
+('K3',1184,24,12,70);

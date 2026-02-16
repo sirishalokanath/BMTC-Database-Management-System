@@ -1,0 +1,569 @@
+Create Table Route
+(
+	bus_no varchar(50) references Bus(bus_no),
+	route_id int primary key,
+	source varchar(50),
+	destination varchar(50),
+	via varchar(50),
+	distance varchar(30),
+	time varchar(30)
+);
+
+
+insert into Route values
+('1','1000','Jayanagar 9th Block','Yeshwanthpur Railway Station','Majestic','19.6 Km','1:25 min');
+
+insert into Route values
+('1E','1001','JP Nagar 6th phase','Chowdeshwari nagar','Malleshwaram','20.8 Km','1:45 min');
+
+insert into Route values
+('2','1002','JP Nagar 6th Phase','Kempegowda Bus Station','Jayanagar TTMC','14.5 Km','0:45 min');
+
+insert into Route values
+('2A','1003','JP Nagar 1st Phase','Kempegowda Bus Station','Jayanagar TTMC','13.7 Km','0:45 min');
+
+insert into Route values
+('3F','1004','JP Nagar 3rd Phase','Hosakerehalli Village','Jayanagar TTMC','13.3 Km','0:55 min');
+
+insert into Route values
+('13','1005','Banashankari TTMC','Shivajinagar TTMC','Jayanagar TTMC','11.7 Km','0:45 min');
+
+insert into Route values
+('13F','1006','Chennammanakera Achukattu','Shivajinagar TTMC','Jayanagar TTMC','16.5 Km','1:00 min);
+
+insert into Route values
+('15A','1007','Padmanabanagar','KR Market','Kumaraswamy Layout','8.3 Km','1:30 min');
+
+insert into Route values
+('15E','1008','Kumaraswamy Layout','Kempegowda Bus Station','KR Market','15.2 Km','1:10 min');
+
+insert into Route values
+('25','1009','BTM Layout Bus Stop','Kempegowda Bus Station','Jayanagar TTMC','14.4 Km','1:10 min');
+
+insert into Route values
+('60A','1010','Vijayanagar TTMC','Jayanagar 9th Block','Jayanagar TTMC','14.5 Km','1:00 min');
+
+insert into Route values
+('61','1011','Kempegowda Bus Station','Vijaynagar TTMC','Magadi Road','6.2 Km,'1:00 min');
+
+insert into Route values
+('75B','1012','Hampi Nagar','Malleshwaram 18th Cross','Rajaji Nagar','12 Km','0:50 min');
+
+insert into Route values
+('75D','1013','Chandra Layout 1st Stage','Chowdeshwari Bus Stand JP Park','Yeshwanthpur TTMC','17.8 Km','1:15 min');
+
+insert into Route values
+('77','1014','Mahalakshmi Layout','KR Market','Rajaji Nagar','12.01 Km','0:50 min');
+
+insert into Route values
+('80','1015','Mahalakshmi Layout','Kempegowda Bus Station','Rajaji Nagar','7.2 Km','0:35 min');
+
+insert into Route values
+('82','1016','Kempegowda Bus Station','Kempegowda Bus Station','Malleshwaram',',14.5 Km','1:00 min');
+
+insert into Route values
+('87','1017','Hampinagara','Kempegowda Bus Station','Magadi Road','7.1 Km','0:35 min');
+
+insert into Route values
+('89','1018','Kurubarahalli','Kempegowda Bus Station','Rajaji Nagar','8.2 Km','0:40 min');
+
+insert into Route values
+('96A','1019','Kempegowda Bus Station','Kempegowda Bus Station','Rajaji Nagar','14.7 Km','1:00 min');
+
+insert into Route values
+('96C','1020','Shankarnag Bus Station','Kempegowda Bus Station','Rajaji Nagar','10.8 Km','0:40 min');
+
+insert into Route values
+('99A','1021','Kempegowda Bus Station','Mohan Kumar Nagar','Yeshwanthpur TTMC','11 Km','0:40 min');
+
+insert into Route values
+('100','1022','Choweshwari Bus Stand','Shivajinagar TTMC','Malleshwaram','6.5 Km','0:55 min');
+
+insert into Route values
+('111','1023','Kaval Byrasandra','KR Market','JC Nagar','19.7 Km','0:50 min');
+
+insert into Route values
+('111C','1024','Kempegowda Bus Station','JC Nagar','11.7 Km','0:50 min');
+
+insert into Route values
+('112A','1025','Kaval Byrasandra','Shivajinagar TTMC','JC Nagar','9.8 Km','0:40 min');
+
+insert into Route values
+('119','1025,'Chinnappa Garden','Shivajinagar TTMC','Rajaji Nagar','4.9 Km','0:30 min');
+
+insert into Route values
+('125','1026','KR Market','Pottery Town','Shivajinagar TTMC','11.3 Km','0:45 min');
+
+insert into Route values
+('131','1027','Domluru TTMC','Kempegowda Bus Station','Indiranagar','11.5 Km','0:55 min');
+
+insert into Route values
+('140','1028','Viveka Nagar','KR Market','Richmond Circle','7.1 Km','0:30 min');
+
+insert into Route values
+('140E','1029','Ejipura','KR Market','Richmond Circle','8.5 Km','0:35 min');
+
+insert into Route values
+('141',1030','Viveka Nagar','Shivajinagar TTMC','Auston Town','9.2 Km','0:25 min');
+
+insert into Route values
+('141K','1031','Shivajinagar TTMC','Koramangala','Viveka Nagar','10.9 Km','0:30 min');
+
+insert into Route values
+('144','1032','Neelasandra Bus Station','Shivajinagar TTMC','Mayohall','5.4 Km','0:25 min');
+
+insert into Route values
+('144A','1033','Gajendra Nagar','Shivajinagar TTMC','Auston Town','6.3 Km','0:30');
+
+insert into Route values
+('146','1034','Viveka Nagar','Kempegowda Bus Station','Auston Town','11.6 Km','0:40 min');
+
+insert into Route values
+('146B','1035','Seenivagilu','Kempegowda Bus Station','Ejipura','12.4 Km','0:45 min');
+
+insert into Route values
+('161B','1036','Jai Bhima Nagar','Shivajinagar TTMC','Wilson Garden','10.9 Km','0:40 min');
+
+insert into Route values
+('161D','1037','BTM Layout Bus Stop','Shivajinagar TTMC','Wilson Garden','12.6 Km','0:55 min');
+
+insert into Route values
+('163C','1038','Lakshman Roa Nagar','KR Market','Richmond Circle','6.7 Km','0:30 min');
+
+insert into Route values
+('163F','1039','Ejipura','AGS Layout Cross','',20 Km','1:10 min');
+
+insert into Route values
+('165E','1040','Adugodi Police Quaters','Kempegowda Bus Station','Wilson Garden','10.2 Km','0:35 min');
+
+insert into Route values
+('168A','1041','Jai Bhima Nagar','KR Market','Wlison Garden','10.6 Km','0:40 min');
+
+insert into Route values
+('171','1042','Koramangala','Kempegowda Bus Station','Wilson Garden','16.9 Km','1:00 min');
+
+insert into Route values
+('171F','1043','Kempegowda Bus Station','Koramangala','Wilson Garden','13.5 Km','0:50 min');
+
+insert into Route values
+('176','1044','Hampi Nagar','Kaval Byrasandra','Rajaji Nagar','17.8 Km','1:25 min');
+
+insert into Route values
+('176A','1045','MCTC Bus Stand','Kaval Byrasandra','Malleshwaram Circle','18.8 Km','1:05 min');
+
+insert into Route values
+('195','1046','Shivajinagar TTMC','Chandra Layout','Vijaynagar TTMC','14.6 Km','1:20 min');
+
+insert into Route values
+('201','1047','Srinagar','Domluru TTMC','Banashankari TTMC','29.1 Km','2:10 min');
+
+insert into Route values
+('201D','1048','Central Silk Board','Binnamangala Hosakote Road','Domlur TTMC','16 Km','0:50 min');
+
+insert into Route values
+('201H','1049','Avalahalli BDA Park','Koramangala','Banashankari TTMC','15.9 Km','1:05 min');
+
+insert into Route values
+('210','1050','KR Market','Uttarahalli','Banashankari TTMC','13.2 Km','0:45 min');
+
+insert into Route values
+('210D','1051','KR Market','Vasanthapura','Banashankari TTMC','126 Km','0:45 min');
+
+insert into Route values
+('210FA','1052','Shivajinagar TTMC','Poorna Prajna Layout','Banashankari TTMC','21.33 Km','1:00 min');
+
+insert into Route values
+('210N','1053','Kempegowda Bus Station','Uttarahalli','KR Market','15.8 Km','1:00 min');
+
+insert into Route values
+('210P','1054','Kempegowda Bus Station','Chikkalsandra Bus Station','KR Market','15.7 Km','0:55 min');
+
+insert into Route values
+('211','1055','KR Market','Somanahalli','Banashankari TTMC','30.11 Km','1:15 min');
+
+insert into Route values
+('211D','1056','KR Market','Naganayakanahalli','Banashankari TTMC','28.6 Km','1:20 min');
+
+insert into Route values
+('211E','1057','KR Market','Karenahalli Kanakapura Road','29.7 Km','1:15 min');
+
+insert into Route values
+('212','1058','KR Market','Agara Sarjapura Road','Banashankari TTMC','21.5 Km','1:00 min');
+
+insert into Route values
+('213A','1059','KR Market','Nettigere','Banashankari TTMC','28.7 Km','1:15 min');
+
+insert into Route values
+('214','1060','KR Market','Tataguppe near Tharalu','32.3 Km','1:30 min');
+
+insert into Route values
+('215','1061','KR Market','Amruthnagar Kanakapura Road','Banshankari TTMC','17.9 Km','1:00 min');
+
+insert into Route values
+('215D','1062','Kempegowda Bus Station','Eshawara Layout','Jayanagar TTMC','15.8 Km','0:50 min');
+
+insert into Route values
+('216','1063','KR Market','Banjara Palya','Banashankari TTMC','28.6 Km','1:25 min');
+
+insert into Route values
+('220B','1064','Kempegowda Bus station','Kengeri Satellite Town Society','Bangalore University gate','13.1 Km','0:50 min');
+
+insert into Route values
+('221','1065','KR Market','Gulganahalli','Kengeri TTMC','27.9 Km','1:30 min');
+
+insert into Route values
+('221E','1066','Ramasandra','KR Market','Kengeri','20.32 Km','1:00 min');
+
+insert into Route values
+('222','1067','Kengeri Satellite Town Society','KR Market','Nayandahalli','18.24 Km','1:15 min');
+
+insert into Route values
+('223A','1068','Dodda Basthi','Shivajinagar TTMC','Rajarajeshwari Nagar','21.6 Km','1:05 min');
+
+insert into Route values
+('225','1069','Channasandra BEML 5th Stage','KR Market','15.9 Km','0:50 min');
+
+insert into Route values
+('226A','1070','Kempegowda Bus Station','Hampapura','Kengeri','30.2 Km','1:15 min');
+
+insert into Route values
+('227','1071','KR Market','Ramohalli','Kengeri','21.5 Km','1:20 min');
+
+insert into Route values
+('227A','1072','KR Market','Mayasandra Doda Aladamara','Kengeri TTMC','32.4 Km','1:55 min');
+
+insert into Route values
+('228','1073','KR Market','Gonipura','Kengeri','24.5 Km','1:05 min');
+
+insert into Route values
+('228A','1074','Parasanapalya','KR Market','Kumbalgodu','31 Km','1:20 min');
+
+insert into Route values
+('230','1075','Byrohalli','KR Market','Kengeri TTMC','21.4 Km','1:00 min');
+
+insert into Route values
+('231A','1076','Avaregere','KR Market','Kengeri TTMC','32 Km','1:30 min');
+
+insert into Route values
+('235A','1077','Nagarbhavi Village','KR Market','14.5 Km','1:00 min');
+
+insert into Route values
+('235F','1078','Kempegowda Bus Station','Sports Authority of India','Vijayanagar TTMC','19.4 Km','1:15 min');
+
+insert into Route values
+('238','1079','Nrupathunga Nagar','Kempegowda Bus Station','Vijay Nagara','15.8 Km','1:15 min');
+
+insert into Route values
+('240','1080','Machohalli','KR Market','Magadi Road','21.2 Km','0:55 min');
+
+insert into Route values
+('241','1081','Kenchanapura','KR Market','Magadi Road','17.4 Km','0:55 min');
+
+insert into Route values
+('241A','1082','Hullalu Satellite Town Jnanabharathi','KR Market','Magadi road','19.8 Km','1:45 min');
+
+insert into Route values
+('242','1083','Tavarekere Magadi Road','KR Market','Kamakshipalya','31.6 Km','1:35 min');
+
+insert into Route values
+('243','1084','Andrahalli Magadi Road','KR Market','Kamakshipalya','17.9 Km','0:50 min');
+
+insert into Route values
+('248','1085','KR Market','Jalahalli Cross','Vijayanagar TTMC','36 km','2:00 min');
+
+insert into Route values
+('248B','1086','Hampi Nagar','Chikkabanavara','Vijayanagar TTMC','36 Km','1:45 min');
+
+insert into Route values
+('250','1087','KR Market','Chikka Banavara Railway Gate','Yeshwanthpur TTMC','18.9 Km','1:00 min');
+
+insert into Route values
+('250AC','1088','Yeshwanthpura TTMC','Chikkabanavara','Peenya 1st Stage','18.3 Km','1:00 min');
+
+insert into Route values
+('251','1089','KR Market','Shivakote','Yeshwanthpur TTMC','36.8 Km','1:40 min');
+
+insert into Route values
+('252','1090','Kempegowda Bus Station','Peenya 2nd Stage','Yeshwanthpur TTMC','18.9 Km','1:15 min');
+
+insert into Route values
+('252A','1091','Peenya 2nd Stage','Shivajinagar TTMC','Yeshwanthpur TTMC','1.6 Km','0:55 min');
+
+insert into Route values
+('252E','1092','Kempegowda Bus Station','Laggere','Yeshwanthpur TTMC','14.2 Km','1:00 min');
+
+insert into Route values
+('253A','1093','KR Market','Byatha','Yeshwanthpur TTMC','32.1 Km','1:45 min');
+
+insert into Route values
+('255','1096','Mathahalli','KR Market','Yeshwanthpur TTMC','31.6 Km','1:25 min');
+
+insert into Route values
+('258','1097','Nelamangala Bus Stand','KR Market','Yeshwanthpur TTMC','37.2 Km','1:35 min');
+
+insert into Route values
+('263','1098','Kammasandra Lakshmipura','KR Market','Yeshwanthpur TTMC','22.5 Km','1:10 min');
+
+insert into Route values
+('263A','1099','KR Market','Thippenahalli','Yeshwanthpur','22.5 Km','1:15 min');
+
+insert into Route values
+('270','1100','Anchepalya Nelamangala Road','Shivajinagar TTMC','Jalahalli Cross','23.5 Km','1:00 min');
+
+insert into Route values
+('270A','1101','Jalahalli Cross','Shivajinagar TTMC','Yeshwanthpura','17.3 Km','1:00 min');
+
+insert into Route values
+('271','1102','Jalahalli East Area 7th camp','Kempegowda Bus Station','Malleshwaram','15.9 Km','0:55 min');
+
+insert into Route values
+('279A','1103','KR Market','Bhoopapsandra','Kempegowda Bus Station','12.9 Km','0:40 min');
+
+insert into Route values
+('280A','1104','KR Market','Agarahara Layout','Yelahanka','21.5 Km','1:00 min');
+
+insert into Route values
+('281A','1105','Kempegowda Bus Station','Yelahanka','Hebbala','20.2 Km','0:45 min');
+
+insert into Route values
+('281C','1106','Kempegowda Bus Station','IAF','Hebbala','37 Km','1:35 min');
+
+insert into Route values
+('286','1107','KR Market','Jakkur','Hebbala','17 Km','0:50 min');
+
+insert into Route values
+('290','1108','Shivajinagar TTMC','Thanisandra','Nagavara','10.4 Km','1:30 min');
+
+insert into Route values
+('295','1109','KR Market','Dodda Gubbi','Vasantha Nagar','24.9 Km','1:10 min');
+
+insert into Route values
+('297A','1110','KR Market','Indrasanahalli Devanahalli','Yelahanka','46 Km','1:45 min');
+
+insert into Route values
+('300','1111','Shivajinagar TTMC','Banasawadi','Clarence School','9.1 Km','0:30 min');
+
+insert into Route values
+('300A','1112','B Channasandra','KR Market','Jai Bharath Nagara','16.2 Km','0:55 min');
+
+insert into Route values
+('300B','1113','Banaswadi','Kempegowda Bus Station','Jai Bharath Nagara','18.8 Km','0:45 min');
+
+insert into Route values
+('301','1114','Channasandra K','KR Market','Jai Bharath Nagara','19.8 Km','1:10 min')
+
+insert into Route values
+('301A','1114','Banaswadi','KR Market','Jai Bharath Nagara','11.8 Km','0:50 min')
+
+insert into Route values
+('301D','1115','Shivajinagar TTMC','Hosakote Bus Stand','Banaswadi','33.3 Km','1:45 min');
+
+insert into Route values
+('306','1116','KR Market','Devanagundi','KR Puram Railway Station','34.4 km','1:20 min');
+
+insert into Route values
+('311','1117','Shivajinagar TTMC','KR Puram','Beniganahalli','14.6 Km','0:50 min');
+
+insert into Route values
+('311C','1118','Shivajinagar TTMC','Mini Taj Mahal','BMTC Depot-6','12.8 Km','0:40 Km','0:40 min');
+
+insert into Route values
+('313D','1119','KR Market','KR puram','Halasaru','18.5 Km','0:55 min');
+
+insert into Route values
+('314B','1120','Kempegowda Bus Station','C V Raman Nagar','Halasuru','17.9 Km','1:10 min');
+
+insert into Route values
+('315','1121','Kempegowda Bus Station','KR Puram','Halasuru','18.4 Km','1:25 min');
+
+insert into Route values
+('323','1122','KR Market','Baguru','Domluru TTMC','38.3 Km','1:40 min');
+
+insert into Route values
+('327A','1123','Kempegowda Bus Station','Dommasandra','Domluru TTMC','30 Km','1:30 min');
+
+insert into Route values
+('327C','1124','KR Market','Attibele Hosur Road','Marathalli','44.4 Km','2:00 min');
+
+insert into Route values
+('328H','1125','Attibele Hosur Road','Hosakote Bus Stand','Sarjapura','40 Km','1:50 min');
+
+insert into Route values
+('330','1126','Shivajinagar TTMC','Marathalli','Hal','14 Km','1:20 min');
+
+insert into Route values
+('335A','1127','Kempegowda Bus Station','Kadugodi','Domluru TTMC','28 Km','1:30 min');
+
+insert into Route values
+('340G','1128','Kempegowda Bus Station','HSR BDA complex','Jayanagar TTMC','16.1 Km','1:00 min');
+
+insert into Route values
+('342','1129','KR Market','Dommasandra','Koramangala','25.2 Km','1:15 min');
+
+insert into Route values
+('342A','1130','KR Market','Sarjapura','Koramangala','29 Km','1:15 min');
+
+insert into Route values
+('342F','1131','Kempegowda Bus Station','Sarjapura','Wilson Garden','31.6 Km','1:45 min');
+
+insert into Route values
+('350D','1132','KR Market','Sampige Nagar','Bangalore Dairy Circle','23.4 Km','1:15 min');
+
+insert into Route values
+('350G','1133','KR Market','Bommasandra Indl Area','Bangalore Dairy Circle','24.3 Km','1:20 min');
+
+insert into Route values
+('360','1134','KR Market','Attibele Hosur Road','Bangalore Dairy Circle','37 Km','1:40 min');
+
+insert into Route values
+('360K','1135','Kempedowda Bus Station','Attibele','Electronics','35.8 Km','1:45 min');
+
+insert into Route values
+('365','1136','Kempegowda Bus Station','Bannerghatta National Park','Bangalore Dairy Circle','31 Km','1:25 min');
+
+insert into Route values
+('365H','1137','Kempegowda Bus Station','Jigani','Jayanagar TTMC','31.5 Km','1:40 min');
+
+insert into Route values
+('375','1138','Kengeri KBH Quaters Shirke','Byrasandra Jayanagar','Banashankari TTMC','20.6 km','1:00 min');
+
+insert into Route values
+('375B','1139','Kengeri KBH Quaters Shirke','Shanthinagar TTMC','Banashankari TTMC','23.7 km','1:25 min');
+
+insert into Route values
+('375D','1140','Banashankari TTMC','Kengeri TTMC','Uttarahalli','11.82 Km','1:00 min');
+
+insert into Route values
+('375E','1141','Kengeri TTMC','Banashankari TTMC','Uttarahalli TTMC','13.3 Km','0:50 min');
+
+insert into Route values
+('375F','1142','Kengeri TTMC','Srinagar','Uttarahalli','15.8 Km','0:55 min');
+
+insert into Route values
+('375G','1143','Banashankari TTMC','Bidadi,'Kengeri TTMC','31 Km','1:30 min');
+
+insert into Route values
+('378','1144','Electronics City','Kengeri TTMC','Utarahalli','34.5 Km','1:40');
+
+insert into Route values
+('378A','1145','Jigani','Kengeri TTMC','Gottigere','30.8 Km','1:40 min');
+
+insert into Route values
+('378D','1146','Electronic City','Kengeri TTMC','Gottegeri','37.8 Km','1:30 min');
+
+insert into Route values
+('378F','1147','Banashankari TTMC','Anekal Main Bus Stand','Gottigere','39.9 Km','2:00 min');
+
+insert into Route values
+('378H','1148','ISRO Layout','Electronic City','','22Km','1:05 min');
+
+insert into Route values
+('378M','1149','Electronic City','Chikkalsandra Bus Stand','Gottigere','27.4 Km','1:20 min');
+
+insert into Route values
+('390','1150','Hosakote Bus Stand','Chikka Thirupathi','Dunnasandra','39 Km','1:30 min');
+
+insert into Route values
+('400A','1151','HAL Main Gate','KR Puram','Kasthuri Nagar','12.2 Km','0:40 min');
+
+insert into Route values
+('401','1152','Yelahanka','Yeshwanthpur TTMC','MS Palya','18.8 Km','1:30 min');
+
+insert into Route values
+('401A','1153','Yelahanka','Peenya 2nd Stage','MS Palya','19.7 Km','1:10 min');
+
+insert into Route values
+('401E','1154','Yelahanka','Chandra Layout','Mathekeri','32 km','2:30 min');
+
+insert into Route values
+('401AF','1155','Yelahanka','Kengeri TTMC','Peenya 2nd Stage','35.7 Km','1:40 min');
+
+insert into Route values
+('402','1156','KR Market','Yelahanka Sattelite Town 5th Phase','Hebbala','22.3 Km','1:05 min');
+
+insert into Route values
+('402M','1157','Yelahanka Satellite Town 5th Phase','Chikkalsandra Bus Stand','34.7 Km','1:45 min');
+
+insert into Route values
+('410','1158','Bommanahalli Hosur Road','Jalahalli Cross','Banashankari TTMC','30.3 Km','2:00 min');
+
+insert into Route values
+('410F','1159','Jayanagar TTMC','Yeshwanthpur TTMC','Banashankari TTMC','24 Km','1:30 min');
+
+insert into Route values
+('410M','1160','Banashankari TTMC','Yeshwanthpur TTMC','Nayadahalli Railway Gate','22 Km','1:15 min');
+
+insert into Route values
+('411','1161','ISRO Layout','Domluru TTMC','Banashankari TTMC','20.6 Km','1:10 min');
+
+insert into Route values
+('411D','1162','Chandapura','Marathahalli Bridge','HSR Layout','28.4 Km','1:20 min');
+
+insert into Route values
+('500A','1163','Banashankari TTMC','Hebbala','KR Puram Railway Station','37.8 Km','1:45 min');
+
+insert into Route values
+('500B','1164','Yeshwanthpur TTMC','Central Silk Board','Marathahalli','30.2 Km','1:20 min');
+
+insert into Route values
+('500C','1165','Central Silk Board','KR Puram','Tin Factory','24.1 Km','1:15 min');
+
+insert into Route values
+('500D','1166','Hebbala','Central Silk Board','Marathahalli','30.2 Km','1:40 min');
+
+insert into Route values
+('500F','1167','Central Silk Board','Kadugodi','Marathahalli','24 Km','1:30 min');
+
+insert into Route values
+('501A','1168','Hebbala','Banashankari TTMC','Kengeri TTMC','76 Km','2:00 min');
+
+insert into Route values
+('501C','1169','Hebbala','Kengeri TTMC','Nagarbhavi','24 Km','1:20 min');
+
+insert into Route values
+('502','1170','Kengeri Satellite Town Society','Kadugodi','Banashankari TTMC','50.3 Km','2:15 min');
+
+insert into Route values
+('502D','1171','KR Puram Railway Station','Kengeri TTMC','Hebbala','36.8 Km','1:40 min');
+
+insert into Route values
+('502F','1172','Kengeri TTMC','Jalahalli Cross','Peenya 2nd Stage','20.7 km','1:00 min');
+
+insert into Route values
+('502H','1173','Kengeri TTMC','Chikkabanavara','Peenya 2nd Stage','26 Km','1:20 min');
+
+insert into Route values
+('600C'1174','Banashankari TTMC','Chandapura','Central Silk Board','20.5 Km','1:30 min');
+
+insert into Route values
+('600F','1175','Banashankari TTMC','Attibele Hosur Road','Central Silk Board','28.9 Km','1:35 min');
+
+insert into Route values
+('600G','1176','ISRO Layout','Chandapura','Central Silk Board','25.2 Km','1:20 min');
+
+insert into Route values
+('AS-1','1177','Banashankari TTMC','Avalahalli New BDA Layout','Konanakunte',' ',' ');
+
+insert into Route values
+('AS-7','1178','Peenya 2nd Stage','Chikkabanavara','Jalahalli Cross','9.9 Km','0:35 min');
+
+insert into Route values
+('AS-10','1179','Bommasandra','Jigani','BIOCON','9 Km','0:25 min');
+
+insert into Route values
+('D-6','1180','Kengeri Satellite town Society','Kadugodi','Central Silk Board','48.3 Km','2:10 min');
+
+insert into Route values
+('FDR1','1181','Vasanthapura','Vasanthapura','Jayanagar 4th Block','19 Km','1:20 min');
+
+insert into Route values
+('FDR2','1182','Vasanthapura','Vasanthapura','Jayanagar 4th Block','19 Km','1:20 min');
+
+insert into Route values
+('FDR7','1181','Chikkalsandra Bus Stand','Chikkalsandra Bus Stand','Kengeri TTMC','24.7 Km','1:25 min');
+
+insert into Route values
+('K1','1182','Madiwala','RMC Yard Yeshwanthpur','Domluru TTMC','27.8 Km','1:55 min');
+
+insert into Route values
+('K3','1183','Basaveshwara Nagar','CPWD Quarters','Vijay Nagar TTMC','30 Km','1:55 min ');
